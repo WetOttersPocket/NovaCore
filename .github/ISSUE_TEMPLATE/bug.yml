@@ -1,0 +1,43 @@
+name: Bug report
+description: Report an actual console test
+title: '[Bug] '
+body:
+  - type: dropdown
+    id: channel
+    attributes:
+      label: Channel
+      options: [TESTER, DEV]
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Nova build and package revision
+      placeholder: preview 115 / 5.120
+    validations:
+      required: true
+  - type: input
+    id: console
+    attributes:
+      label: Console model, firmware and exact HEN version
+      placeholder: PS4 Slim CUH-xxxx / 13.02 / GoldHEN 2.4b18.2
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include internal/external storage if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Error codes, screenshots or completed report
+      description: Attach files here. Remove account details, tokens and console IPs.

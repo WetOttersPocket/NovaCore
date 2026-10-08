@@ -1,0 +1,6 @@
+*.pkg
+*.zip
+.env*
+node_modules/
+*.private*
+.local/
