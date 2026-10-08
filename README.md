@@ -5,9 +5,16 @@ media, themes and tools in one controller-friendly interface.
 
 ## Downloads
 
-Download PKGs from this repository's **Releases** tab. Discord membership,
-donations and completed reports are not required for public TESTER downloads.
-Discord is optional: https://discord.gg/cjgA8T94E
+Download public PKGs from this repository's **Releases** tab. Public builds do
+not require Discord membership, donations or a completed report.
+
+New controlled candidates may have a short Discord early-access period first.
+People who submit a valid report for the previous build receive the tester role
+and can see the private next-build channel. After that test window, the build
+can be announced publicly here. Discord controls channel visibility; a public
+GitHub Release URL can still be forwarded and is not DRM.
+
+Discord is optional for public releases: https://discord.gg/cjgA8T94E
 
 This repository contains public release information and issue forms. The full
 development source is not published here; dependency and asset provenance review
@@ -18,7 +25,7 @@ is still open. Do not mistake public binary downloads for an open-source licence
 | | TESTER | DEV |
 |---|---|---|
 | Purpose | Public baseline testing | Explicit experimental testing |
-| File | `NovaCore-preview.115-TESTER.pkg` | `NovaCore-preview.115-DEV.pkg` |
+| File | `NovaCore-preview.116-TESTER.pkg` | `NovaCore-preview.116-DEV.pkg` |
 | GoldHEN config switches | Confirmation, backups; next HEN load | Same plus plugin/patch editing |
 | PS-return experiment | Excluded | Experimental; not guaranteed |
 | HEN auto-start | Not established as working | Not established as working |
@@ -63,7 +70,12 @@ file does not establish redistribution rights for packages it references.
 
 ## Status
 
-Preview 115: build-specific reports; GoldHEN configuration switches; LAN cover
+Preview 116 adds cancellable title-ID-bound launch fades, better LAN cover
+fallback and defers new cover requests while navigating. The local report tool
+accepts harmless answer formatting, rejects duplicate fields and provides
+correction hints; the Discord bot reconnects and checks recent submissions.
+
+Retained from 115: build-specific reports; GoldHEN configuration switches; LAN cover
 fallback; Big Lez Rainbow theme; report identity validation. Compile/link,
 package integrity and format tests passed. Runtime behavior needs console tests.
 
