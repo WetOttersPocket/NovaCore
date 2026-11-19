@@ -2,42 +2,43 @@ name: Bug report
 description: Report an actual console test
 title: '[Bug] '
 body:
-  - type: dropdown
-    id: channel
-    attributes:
-      label: Channel
-      options: [TESTER, DEV]
-    validations:
-      required: true
   - type: input
     id: build
     attributes:
-      label: Nova build and package revision
-      placeholder: preview 115 / 5.120
+      label: Nova version and package revision
+      placeholder: v1.0.2-RC1 / 03.02
     validations:
       required: true
   - type: input
     id: console
     attributes:
       label: Console model, firmware and exact HEN version
-      placeholder: PS4 Slim CUH-xxxx / 13.02 / GoldHEN 2.4b18.2
+      placeholder: PS4 Slim CUH-xxxx / 13.02 / exact GoldHEN version
+    validations:
+      required: true
+  - type: dropdown
+    id: restart
+    attributes:
+      label: Full Restart and HEN enabled after updating?
+      options: ['Yes', 'No', 'Not sure']
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
       label: Steps to reproduce
-      description: Include internal/external storage if relevant.
+      description: Include the game/app or media format, and internal/USB storage if relevant. For Quick Menu say whether you were in Nova, Sony dashboard or a game.
     validations:
       required: true
   - type: textarea
     id: results
     attributes:
-      label: Expected and actual behavior
+      label: Expected and actual behaviour
+      description: Include any error code. For playback say whether picture and sound worked.
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Error codes, screenshots or completed report
-      description: Attach files here. Remove account details, tokens and console IPs.
+      label: Screenshots or relevant redacted logs
+      description: Never share passwords, tokens, pairing PINs, console IPs or stream URLs containing credentials. Do not repeat a freeze just to obtain logs.
