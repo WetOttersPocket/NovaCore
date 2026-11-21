@@ -16,6 +16,12 @@ Experimental public test; owner reports installed and running. Package integrity
 - Video wallpaper disabled and wall resources absent from this package; static backgrounds retained. No new nebula overlay included.
 - Package 03.08, title ID NOVA00003, dashboard plugin d59 / 94409.
 
+### Languages
+
+- English, Español, Français, Deutsch, Italiano and Português, plus System default, under Settings → System → Language.
+- Phase 1 covers main tabs, hints, Settings, Home greetings and Quick Menu blade labels; deeper pages/catalogue content remain English.
+- Non-English console behaviour and automatic language detection still need testing; English system detection was confirmed.
+
 ### Retained since the last public RC
 
 - Optional Nova Series and Nova Switch layouts, game cards that retain the layout background, Nova Theme 2 and dashboard hover-panel changes. The layouts are almost finished; details still need polishing/testing.
