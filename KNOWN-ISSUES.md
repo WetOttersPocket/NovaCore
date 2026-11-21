@@ -1,39 +1,16 @@
-# Known issues — v1.0.2-RC1
+# Known issues — v1.0.4-RC2.1
 
-This page covers the current RC, not the archived Preview 113–121 builds.
+- **Unresolved startup issue:** the preceding 03.07 test build froze/crashed during HEN startup. Troubleshooting did not identify the cause. RC2.1 is reported running by the owner; automatic HEN startup remains unverified. Stop testing if a crash occurs.
+- Verified package identity: **03.08**, bundled dashboard plugin **d59 / 94409**. These package checks do not establish that all runtime features work.
+- Store shortcut selection, trophy artwork, bottom-bar hiding, theme refresh, media volume and YouTube sync need testing in the final package.
+- A Store press immediately after landing on its tile may still reach Sony’s screen.
+- Firmware 13.52 is not confirmed. The owner’s established test setup is PS4 Slim / 13.02 / GoldHEN. Do not update firmware for Nova.
+- YouTube defaults to 480p. Hardware video decoding is not active. Watch Together is not included.
+- Nova’s dashboard notification panel remains off; the bell uses Sony’s normal list.
+- Nova Theme 2 may need selecting again after reboot.
 
-## Confirmed on the owner's PS4
+## Reporting and controls
 
-- YouTube Watch plays with picture and sound.
-- YouTube Listen plays through Nova Quick Menu.
-- The YouTube lookup gets past “Getting the video”.
-- Earlier RC testing established Quick Menu on the PS dashboard/in games and AutoRun on the owner's PS4 Slim, firmware 13.02 with GoldHEN. This does not establish compatibility with every console or game.
+Hold touchpad → Return to Nova → Cross for Quick Return. A normal PS tap still opens Sony's dashboard.
 
-## Current limits
-
-- The PS button opens Sony's dashboard. For Nova Quick Return: **hold touchpad → Return to Nova → Cross**.
-- Nova's own dashboard notification panel is temporarily off. The bell uses Sony's normal list.
-- The PS4 hardware video decoder is not active in this RC. YouTube defaults to 480p for smoother playback.
-- H.265/HEVC, DRM and video above 1080p are unsupported. Streams depend on their source, format and availability.
-- Watch Together is not included.
-- A Nova profile picture appears across Nova and Nova friends, but does not replace Sony's system profile picture.
-- Nova Play/System Link supports compatible games; it does not provide universal online matchmaking.
-
-## Latest changes needing console checks
-
-- Dashboard becoming the default once, left/right row movement, looping, info-box alignment and remembering a later choice of classic Nova Lab.
-- World Radio region/country browsing, live list loading and fallback behaviour.
-- Phone-to-TV YouTube sending before opening YouTube in Nova.
-- Long titles fitting Quick Menu music cards.
-- Clearer helper recovery messages and re-enabling a helper that disabled itself after repeated failed starts.
-- Wider firmware/model compatibility, individual game/app launches and media sources.
-
-## If something goes wrong
-
-After updating, open Nova once, **Full Restart**, then enable HEN again. A crash guard switches Nova to safe mode after two early plugin crashes. Do not repeatedly force a crashing feature.
-
-For helper-not-running messages, enable GoldHEN/HEN and restart, then enable HEN after boot. The latest recovery flow can re-enable a disabled helper by pressing Cross on a game again within 15 seconds; restart with HEN afterward. This recovery flow still needs testing.
-
-YouTube fetching can be disabled with an empty `/data/novacore/yt-console.off` file. `/data/novacore/radio-regions.off` restores classic UK Radio browsing.
-
-Logs are under `/data/novacore-lab/`; video uses `video.log`, and YouTube uses `yt/console.log`. Include only relevant, redacted extracts in public reports. Never share credentials or pairing codes. See [how to report](CONTRIBUTING.md).
+Keep your previous working package. Do not repeatedly reproduce a freeze or restart the console just to get logs. Report the exact build, console model, firmware, HEN version, steps and outcome. Redact credentials, account details and pairing codes. See [reporting guide](CONTRIBUTING.md).

@@ -6,7 +6,7 @@ Download the current release candidate from [Releases](https://github.com/WetOtt
 
 Use **Issues → Bug report** and include:
 
-1. Exact Nova version and package revision (current: v1.0.2-RC1 / 03.02).
+1. Exact Nova version and package revision (current: v1.0.4-RC2.1 / 03.08).
 2. Console model, firmware and exact GoldHEN/HEN version.
 3. Steps, expected result, actual result and any error code.
 4. Whether you fully restarted and enabled HEN after updating.

@@ -2,6 +2,35 @@
 
 Current release notes take precedence over older claims where behaviour has changed.
 
+## [1.0.4-RC2.1] — 2026-11-21
+
+Experimental public test; owner reports installed and running. Package integrity/identity checked. The preceding test build’s HEN-startup crash cause remains unresolved; this release does not claim a verified startup fix.
+
+### Changed — console checks requested
+
+- Quick Menu Music volume slider at the top, shared radio/media volume and improved theme-colour refresh.
+- Top-bar panel closing/icon sizing changes, Nova-tile rotating screenshots, trophy/game artwork extraction, Store app-picker catalogue correction and failed-launch notices.
+- Faster Store icon checking and a change targeting the overlapping bottom button bar; brief icon flashes may remain.
+- YouTube picture/audio synchronisation, Language at the top of System settings, and Settings What’s new picture cards.
+- Older Nova boot-component recognition and backed-up upgrade handling. Automatic HEN startup remains unverified.
+- Video wallpaper disabled and wall resources absent from this package; static backgrounds retained. No new nebula overlay included.
+- Package 03.08, title ID NOVA00003, dashboard plugin d59 / 94409.
+
+### Retained since the last public RC
+
+- Optional Nova Series and Nova Switch layouts, game cards that retain the layout background, Nova Theme 2 and dashboard hover-panel changes. The layouts are almost finished; details still need polishing/testing.
+- YouTube, World Radio, phone controls, game setups, achievements, Wrapped and social features.
+
+### Known issues
+
+- Prior HEN-startup crashes remain unexplained. Owner-reported manual operation does not verify automatic startup. Stop after a crash; do not repeatedly reproduce it for logs.
+- Store selection, pictures, volume/theme behaviour, bottom-bar hiding and video sync need tests in the final package.
+- YouTube defaults to 480p; hardware decoding inactive; Watch Together absent. Firmware 13.52 and non-English languages unconfirmed.
+
+### Server-side
+
+- Nova Online counter uses a 10-minute check-in window; no installation needed for this change.
+
 ## [1.0.2-RC1] — 2026-11-19
 
 **✨ Added**

@@ -1,4 +1,4 @@
-# Third-party notices — NovaCore v1.0.2-RC1
+# Third-party notices — NovaCore v1.0.4-RC2.1
 
 NovaCore by **WetOttersPocket** 🦦. Thanks to the upstream developers and service providers below. Third-party components retain their own licences; NovaCore does not claim ownership of them.
 
