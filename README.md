@@ -1,3 +1,5 @@
+![NovaCore v1.0.4-RC2.1 banner](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/NovaCore-v1.0.4-RC2.1-Banner.png)
+
 # NovaCore 🦦
 
 A free, customisable PS4 dashboard by **WetOttersPocket**. Your games, media, friends and tools together, with a **Quick Menu that works in Nova, on the PS dashboard and over games**.
