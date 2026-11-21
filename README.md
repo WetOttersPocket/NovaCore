@@ -48,10 +48,10 @@ Test setup: **PS4 Slim, firmware 13.02, GoldHEN**. Wider compatibility is still 
 
 1. Download [NovaCore-v1.0.4-RC2.1.pkg](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/NovaCore-v1.0.4-RC2.1.pkg) and compare its SHA-256 with [SHA256SUMS.txt](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/SHA256SUMS.txt).
 2. Copy the PKG to USB, or use FTP to place it in `/data/pkg`.
-3. With HEN enabled, use **Settings → Debug Settings → Game → Package Installer** to install. Package 03.08 updates v1.0.1-RC1; it uses title ID NOVA00003.
+3. With HEN enabled, use **Settings → Debug Settings → Game → Package Installer** to install. Package 03.08 updates earlier Nova RCs with title ID NOVA00003.
 4. **Open Nova once** to set up the bundled dashboard plugin **d59** and auto-start.
 5. Do a **Full Restart**, not rest mode, then enable HEN again so the new plugin loads. If your HEN asks you to enable Nova's installed AutoRun payload, enable it in that loader.
-6. On the tested startup, expect a brief black screen while the dashboard restarts, three Nova pop-ups, then around **5–10 seconds** on Sony's dashboard before Nova opens. Timing may vary.
+6. Earlier RC testing showed a brief black screen, three Nova pop-ups and roughly **5–10 seconds** on Sony's dashboard before Nova opened. **That is historical behaviour, not a verified RC2.1 automatic-startup result.**
 7. Hold touchpad to open Quick Menu. It remains available across Nova, games and Sony's dashboard.
 
 **Startup caution:** the normal Full Restart / HEN sequence still needs clean verification for this replacement. The owner reported running Nova, but that does not establish the cause of the earlier failures. Do not repeatedly trigger a freeze or crash.
