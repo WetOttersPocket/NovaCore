@@ -6,7 +6,7 @@ A free, customisable PS4 dashboard by **WetOttersPocket**. Your games, media, fr
 
 **Current release: [v1.0.4-RC2.1](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.1)** · Release candidate · Package 03.08 · NOVA00003
 
-**[Download the PKG](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/NovaCore-v1.0.4-RC2.1.pkg)** · [Full release notes](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.1) · [Changelog](CHANGELOG.md) · [Known issues](KNOWN-ISSUES.md) · [Discord](https://discord.gg/cjgA8T94E)
+**[Download the PKG](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/NovaCore-v1.0.4-RC2.1-Veil.pkg)** · [Full release notes](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.1) · [Changelog](CHANGELOG.md) · [Known issues](KNOWN-ISSUES.md) · [Discord](https://discord.gg/cjgA8T94E)
 
 Public downloads are free. Discord membership, donations and tester reports are not required.
 
@@ -54,7 +54,7 @@ Choose your startup tab, layout, wallpaper, moving overlay, colours, tile size, 
 
 Test setup: **PS4 Slim, firmware 13.02, GoldHEN**. Wider compatibility is still being tested. **Do not update to firmware 14.00 for Nova.**
 
-1. Download [NovaCore-v1.0.4-RC2.1.pkg](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/NovaCore-v1.0.4-RC2.1.pkg) and compare its SHA-256 with [SHA256SUMS.txt](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/SHA256SUMS.txt).
+1. Download [NovaCore-v1.0.4-RC2.1-Veil.pkg](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/NovaCore-v1.0.4-RC2.1-Veil.pkg) and compare its SHA-256 with [SHA256SUMS.txt](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/SHA256SUMS.txt).
 2. Copy the PKG to USB, or use FTP to place it in `/data/pkg`.
 3. With HEN enabled, use **Settings → Debug Settings → Game → Package Installer** to install. Package 03.08 updates earlier Nova RCs with title ID NOVA00003.
 4. **Open Nova once** to set up the bundled dashboard plugin **d59** and auto-start.
@@ -67,7 +67,7 @@ Test setup: **PS4 Slim, firmware 13.02, GoldHEN**. Wider compatibility is still 
 Updating does not require deleting saves or your user data. Keep a copy of the previous PKG and your Nova settings before testing an RC. Older preview packages use different identities; their archived installation notes do not describe this RC.
 
 ```text
-SHA-256  c8012b11edff15a418ba12111c1a9677d6f45449ae8fa5cdcef4ec09267e64b4
+SHA-256  70e97b567683e77ad66fbaa109aa248dd9251704ca697ff1e62d581dc5376482
 ```
 
 ## 🎬 Playback limits
