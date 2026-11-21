@@ -28,6 +28,12 @@ Public downloads are free. Discord membership, donations and tester reports are 
 
 The nebula overlay shown separately in development is a preview, **not part of this package**. [Detailed changes and test status](CHANGELOG.md).
 
+### 🌍 Six languages
+
+Choose **System default, English, Español, Français, Deutsch, Italiano or Português** in **Settings → System → Language**.
+
+This first translation stage covers the main tabs, button hints, Settings, Home greetings and Quick Menu blade labels. Deeper pages and catalogue content still use English. System default follows your PS4 language where supported and falls back to English; automatic detection is confirmed on the owner’s English setup, while other system languages still need console testing. Custom translation packs can extend or correct the bundled text.
+
 ## 🌈 Make the dashboard yours
 
 Choose your startup tab, layout, wallpaper, moving overlay, colours, tile size, motion, name effects, theme music, navigation sounds and PS dashboard glow. Nova Neon comes bundled, and Theme Studio lets you create your own look.
