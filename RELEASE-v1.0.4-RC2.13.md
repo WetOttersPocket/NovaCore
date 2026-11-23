@@ -4,7 +4,11 @@
 
 **Friends, a better Quick Menu, easier YouTube setup and phone notifications.** This brings together the work since the last public build, **RC2.1**, including the latest music, artwork and playback changes.
 
-📦 **The PKG will be added here separately. There is no RC2.13 download attached yet.** This is a release candidate; the latest changes have passed build and computer-side checks, but still need testing on PS4. The pictures below are generated interface previews, except the Phone Link browser screenshot.
+📦 **The RC2.13 PKG and matching checksum are now attached in Assets.** This is a release candidate; the latest changes have passed build and computer-side checks, but still need testing on PS4. The pictures below are generated interface previews, except the Phone Link browser screenshot.
+
+## 🎮 Quick Menu input report — 23 November
+
+**Reported in the current test build:** navigating Quick Menu can also move the PS4 dashboard or game underneath. Avoid using it during live gameplay until the fix is confirmed. A separate **RC2.14 input-focus fix candidate** is being tested: it requests focus while open, blocks background dashboard shortcuts, and releases input on close/failure. Computer-side checks passed; **actual game/dashboard input isolation still needs a PS4 test**. This candidate is not bundled into the RC2.13 download below.
 
 ## 🎮 Your Quick Menu, wherever you play
 
@@ -89,7 +93,7 @@ Music/radio, streams, Jellyfin, YouTube, Nova Cast, captures, files, Homebrew do
 
 English, Español, Français, Deutsch, Italiano and Português remain available, plus System default. Translation covers the main navigation/settings/hints; some deeper pages and source content remain English.
 
-## 📥 Install when the PKG is attached
+## 📥 Install / update
 
 GoldHEN is required. Do not update your console firmware for Nova. Keep your previous working package and settings.
 
@@ -123,7 +127,7 @@ Include exact build, PS4 model, firmware, GoldHEN version, steps, expected/actua
 | Resident helper | `94420` |
 | SHA-256 | `d10ffd212011462e17cb581c0f5657c679509281eb3fb1a7eeabda3664ad911e` |
 
-The matching checksum is attached. **The PKG itself is not attached yet.** Only upload this exact file to this release; older private candidates have different hashes.
+The matching PKG and checksum are attached. **This is RC2.13; the newer RC2.14 input candidate is not part of this file.** Only upload this exact file to this release; older private candidates have different hashes.
 
 ## 📜 Credits and source
 

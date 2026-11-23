@@ -8,7 +8,9 @@ A free, customisable PS4 dashboard by **WetOttersPocket**. Games, media, friends
 
 **[Release notes](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13)** · [Changelog](CHANGELOG.md) · [Known issues](KNOWN-ISSUES.md) · [Test checklist](docs/TESTING-RC2.13.md) · [Discord](https://discord.gg/cjgA8T94E)
 
-📦 **PKG upload pending.** The new release page is ready; the installer and matching checksum are being added separately by the owner. No new-build download is available until they appear. [Previous RC2.1 downloads](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.1) remain available with their own limitations.
+📦 **[RC2.13 PKG and checksum are available in release Assets](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13).**
+
+**New Quick Menu input report:** menu navigation can also move the game/dashboard underneath. Avoid it during live gameplay pending confirmation. A separate RC2.14 focus fix candidate has passed host checks and still needs console testing; it is not in the RC2.13 download. [Previous RC2.1 downloads](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.1) remain available with their own limitations.
 
 The latest candidate adds a more complete **QM Social gamercard, Friends/requests/messages, local MP3s and artwork, independent YouTube setup and real phone notifications**. Changes also address top-bar panels, unread markers, Back-button freezes, text sizing, Store redirects, streams and local MP4 input. **Current console playback problems are still being investigated**; built/tested does not mean confirmed on every console. See [known issues](KNOWN-ISSUES.md).
 

@@ -2,9 +2,14 @@
 
 Current release notes take precedence over older claims where behaviour has changed.
 
+## [Unreleased — RC2.14 input candidate] — 2026-11-23
+
+- Candidate change for Quick Menu navigation also reaching the game/dashboard: focusable/frontable overlay with focus pass-through disabled while open; background shortcuts suppressed; visible-menu samples consumed even with a game behind.
+- Closing/failure returns focus before removing the scene, including removal failure. Input tests, Social Back/Close and privacy checks passed. **Actual PS4 isolation remains unverified.** Separate candidate, not included in RC2.13.
+
 ## [1.0.4-RC2.13] — 2026-11-23
 
-Release-candidate notes published ahead of the owner's PKG upload. Latest console acceptance pending. Changes below collect the private stages since public RC2.1.
+The owner has attached the RC2.13 PKG and matching checksum. Latest console acceptance pending. Changes below collect the private stages since public RC2.1.
 
 ### Added and changed
 

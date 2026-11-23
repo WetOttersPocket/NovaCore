@@ -1,6 +1,6 @@
 # Known issues — v1.0.4-RC2.13
 
-The PKG will be attached separately. Latest code/build/host tests do not establish PS4 acceptance.
+The RC2.13 PKG is attached to its release. Latest code/build/host tests do not establish PS4 acceptance.
 
 ## Playback
 
@@ -10,6 +10,8 @@ The PKG will be attached separately. Latest code/build/host tests do not establi
 - H.265/HEVC, DRM and above-1080p remain unsupported. MP4 is a container, not a codec guarantee. Hardware decoding and software fallback availability do not prove a given stream plays on PS4.
 
 ## Quick Menu, startup and games
+
+- **New report:** QM navigation can also control the dashboard/game underneath. Avoid it during live gameplay until confirmed fixed. RC2.14 is a separate input-focus candidate with host checks passed; console isolation is still unverified. It is not included in the RC2.13 download.
 
 - Back/Close, Social font/keyboard bounds, stale top-bar focus and dedicated Profile/Friends/Messages panel fixes require repeated real-console checks.
 - Startup executable-layout repair passed build checks; full HEN/auto-start flow still needs confirmation on the latest complete package. Stop on a crash; do not repeat for logs.
