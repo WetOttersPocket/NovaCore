@@ -1,44 +1,48 @@
-![NovaCore v1.0.4-RC2.1 banner](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/NovaCore-v1.0.4-RC2.1-Banner.png)
+![NovaCore banner](docs/screenshots/v1.0.4-rc2.13/NovaCore-v1.0.4-RC2.13-Banner.png)
 
 # NovaCore 🦦
 
-A free, customisable PS4 dashboard by **WetOttersPocket**. Your games, media, friends and tools together, with a **Quick Menu that works in Nova, on the PS dashboard and over games**.
+A free, customisable PS4 dashboard by **WetOttersPocket**. Games, media, friends and tools together, with a **Quick Menu inside Nova, on the PS4 dashboard and over games**.
 
-**Current release: [v1.0.4-RC2.1](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.1)** · Release candidate · Package 03.08 · NOVA00003
+## 🌌 Latest: v1.0.4-RC2.13
 
-**[Download the PKG](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/NovaCore-v1.0.4-RC2.1-Veil.pkg)** · [Full release notes](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.1) · [Changelog](CHANGELOG.md) · [Known issues](KNOWN-ISSUES.md) · [Discord](https://discord.gg/cjgA8T94E)
+**[Release notes](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13)** · [Changelog](CHANGELOG.md) · [Known issues](KNOWN-ISSUES.md) · [Test checklist](docs/TESTING-RC2.13.md) · [Discord](https://discord.gg/cjgA8T94E)
 
-Public downloads are free. Discord membership, donations and tester reports are not required.
+📦 **PKG upload pending.** The new release page is ready; the installer and matching checksum are being added separately by the owner. No new-build download is available until they appear. [Previous RC2.1 downloads](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.1) remain available with their own limitations.
 
-## 🎮 Quick Menu & return to Nova
+The latest candidate adds a more complete **QM Social gamercard, Friends/requests/messages, local MP3s and artwork, independent YouTube setup and real phone notifications**. Changes also address top-bar panels, unread markers, Back-button freezes, text sizing, Store redirects, streams and local MP4 input. **Current console playback problems are still being investigated**; built/tested does not mean confirmed on every console. See [known issues](KNOWN-ISSUES.md).
 
-- **Hold the touchpad for about half a second** to open Nova Quick Menu in Nova, on the PS dashboard or inside a game.
-- To get back quickly, open the Quick Menu, select **Return to Nova** and press **✕**.
-- A normal **PS button press still opens Sony's dashboard**. Use Quick Menu for Nova Quick Return.
-- Control music while playing. Favourite radio, USB/HDD MP3s and YouTube Listens are available through Music.
-- Nova Friends, Messages and online shortcuts also connect to the PS dashboard's top bar. The notification bell currently uses Sony's own list.
+## 🎮 Quick Menu and return to Nova
 
-## ✨ What's new in v1.0.4-RC2.1
+- **Hold touchpad for about half a second** to open the Quick Menu.
+- Choose **Return to Nova → ✕** to get back quickly from a game or Sony dashboard.
+- A normal **PS tap still opens Sony's dashboard**.
+- Control music, volume and favourite radio/local tracks while playing.
+- **Social:** your gamercard, Friends, requests, messages and profile controls. Press **Up** from its first option to focus your card; **✕** opens Nova Profile and **Down** returns to options.
+- New gamercard design: green **Online**, pink **Playing…** line and trophy pictures/counts. Activity is hidden for Appear offline or sharing-off.
+- Sony top-bar Profile/Friends/Messages have **separate panels**, rather than opening the touchpad menu.
 
-**Experimental test build.** The owner reports RC2.1 running. Package integrity and identity were checked, but the preceding test build's HEN-startup crash cause remains unresolved. **This is not a verified automatic-startup fix.** Keep the last working package and stop if a crash occurs.
+![Gamercard design preview](docs/screenshots/v1.0.4-rc2.13/gamercard-playing-preview.png)
 
-- **Quick Menu across Nova, PS dashboard and games:** Music-tab volume slider, shared radio volume and theme-colour refresh improvements. Please test.
-- **On the PS4 dashboard:** top-bar panel/icon changes, rotating Nova-tile screenshots, trophy pictures, Store shortcut catalogue improvements and bottom-bar overlap changes. Please test.
-- **Inside Nova:** video wallpaper disabled, Language at the top of System settings, What's new cards and YouTube picture/audio sync changes. Static backgrounds remain.
-- **Layouts:** Nova Dashboard default, classic Nova Lab, optional Nova Series, Nova Switch and Nova Console Mix. Series offers its own global green/charcoal look, pins/groups, Guide and Library. Switch follows your active theme with a minimal Home/software strip. The new layouts are almost finished and still being polished/tested.
-- Everything from the earlier public RC remains: YouTube Watch/Listen, World Radio, Phone Link, game cards/setups, achievements, Wrapped and social features.
+*Generated desktop design preview with demonstration data; actual PS4 appearance/behaviour still needs testing.*
 
-The nebula overlay shown separately in development is a preview, **not part of this package**. [Detailed changes and test status](CHANGELOG.md).
+## 📱 Phone Link, without Friends setup
 
-### 🌍 Six languages
+YouTube uses its own automatic device setup; no Nova Online friend-code setup or Google sign-in is required. Open **Media → YouTube → Phone Link** and scan the QR to pair once.
 
-Choose **System default, English, Español, Français, Deutsch, Italiano or Português** in **Settings → System → Language**.
+Tap **Enable notifications** on the phone. iPhone users first add NovaCore to the Home Screen and open that icon. Notifications can then bring you back when the PS4 needs Phone Link or playback approval, even with the page closed, subject to phone settings. Tapping never approves playback automatically. Existing pairings are preserved; Test, Off and Unpair are available. Actual phone delivery still needs your permission/test step.
 
-This first translation stage covers the main tabs, button hints, Settings, Home greetings and Quick Menu blade labels. Deeper pages and catalogue content still use English. System default follows your PS4 language where supported and falls back to English; automatic detection is confirmed on the owner’s English setup, while other system languages still need console testing. Custom translation packs can extend or correct the bundled text.
+## 🎵 Music and NovaFlix
 
-## 🌈 Make the dashboard yours
+**Audio → Local files** scans HDD/USB MP3s, including the Nova music folder, with a 1,000-track limit. Embedded MP3 art and local film cover pictures are supported where available; originals stay unchanged. Radio, favourites, custom stations, queue and Quick Menu controls remain.
 
-Choose your startup tab, layout, wallpaper, moving overlay, colours, tile size, motion, name effects, theme music, navigation sounds and PS dashboard glow. Nova Neon comes bundled, and Theme Studio lets you create your own look.
+NovaFlix opens directly to its catalogue. The provided IPTV.org source is **live TV**, grouped by category, with supplied logos or a branded fallback. Your own legal sources, local/USB films and Jellyfin remain. Captures stays in its separate gallery. Geo/offline flags and actual failures are filtered where detected, but source availability varies.
+
+**Local MP4 and live-stream playback remain under test.** The new local reader passed computer-side tests with a reported film's metadata and picture/audio samples; console success is not yet claimed. H.265/DRM/above-1080p are unsupported. [Full playback status](KNOWN-ISSUES.md).
+
+## 🌈 Make it yours
+
+Choose startup tab, layout, themes, colours, wallpapers, motion, tile sizing, name effects, sounds, music and dashboard glow. Nova Neon/Theme Studio, 13 Library layouts (including Cover Flow, Tabletop and Star Wars-style scrolling), plus optional Nova Series/Switch/Console Mix looks remain. Some layouts are still being polished.
 
 | Area | What you can do |
 |---|---|
@@ -50,58 +54,26 @@ Choose your startup tab, layout, wallpaper, moving overlay, colours, tile size, 
 | **Your profile** | Per-user pictures from the bundle or USB, trophies with icons/dates, notifications, activity, achievements and Wrapped. Nova pictures do not replace Sony's system avatar. |
 | **Tools** | GoldHEN hub, PS4 Care, files/packages, system controls, scene tools, retro arcade, news, save snapshots, recovery backup, log export and screen recording. Availability depends on the console and enabled services. |
 
-## 📥 Install / update
 
-Test setup: **PS4 Slim, firmware 13.02, GoldHEN**. Wider compatibility is still being tested. **Do not update to firmware 14.00 for Nova.**
+Nova pictures/names are used by Nova and its dashboard integration. This is **not a PSN Online ID change**; system-profile picture writes remain disabled and Sony local-name writes are not included. Discord QR linking remains; the optional community-member feed is not enabled. Nova messages use the server, are not end-to-end encrypted and are retained there for up to 30 days.
 
-1. Download [NovaCore-v1.0.4-RC2.1-Veil.pkg](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/NovaCore-v1.0.4-RC2.1-Veil.pkg) and compare its SHA-256 with [SHA256SUMS.txt](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/SHA256SUMS.txt).
-2. Copy the PKG to USB, or use FTP to place it in `/data/pkg`.
-3. With HEN enabled, use **Settings → Debug Settings → Game → Package Installer** to install. Package 03.08 updates earlier Nova RCs with title ID NOVA00003.
-4. **Open Nova once** to set up the bundled dashboard plugin **d59** and auto-start.
-5. Do a **Full Restart**, not rest mode, then enable HEN again so the new plugin loads. If your HEN asks you to enable Nova's installed AutoRun payload, enable it in that loader.
-6. Earlier RC testing showed a brief black screen, three Nova pop-ups and roughly **5–10 seconds** on Sony's dashboard before Nova opened. **That is historical behaviour, not a verified RC2.1 automatic-startup result.**
-7. Hold touchpad to open Quick Menu. It remains available across Nova, games and Sony's dashboard.
+## 🌍 Languages
 
-**Startup caution:** the normal Full Restart / HEN sequence still needs clean verification for this replacement. The owner reported running Nova, but that does not establish the cause of the earlier failures. Do not repeatedly trigger a freeze or crash.
+English, Español, Français, Deutsch, Italiano and Português, plus System default under **Settings → System → Language**. Main tabs, settings, hints and greetings are translated; deeper pages and source content can remain English. Broader non-English hardware checks are pending.
 
-Updating does not require deleting saves or your user data. Keep a copy of the previous PKG and your Nova settings before testing an RC. Older preview packages use different identities; their archived installation notes do not describe this RC.
+## 📥 Install once the new PKG is attached
 
-```text
-SHA-256  70e97b567683e77ad66fbaa109aa248dd9251704ca697ff1e62d581dc5376482
-```
+GoldHEN is required. Do not update firmware for Nova. The owner's established test setup is PS4 Slim/13.02/GoldHEN; other combinations need testing.
 
-## 🎬 Playback limits
+1. Get the named release's PKG and matching checksum from its Assets.
+2. Install through your usual HEN Package Installer; keep the last working package/settings.
+3. Open Nova manually once for component setup. After a clean launch, fully restart and enable HEN for the updated resident helper. Enable Nova AutoRun in your loader if requested.
+4. Hold touchpad for Quick Menu; **Return to Nova → ✕** gets back from a game.
 
-Streams support HLS, TS, FLV, MKV and MP4, with HTTP/HTTPS, custom ports and Xtream-style URLs. Audio includes AAC, MP3, AC3 and EAC3; seeking is for non-live videos. Local MP4 and HTTPS MP4 retain the original player.
+A brief black screen/notices/Sony dashboard can occur during the established startup flow. A lasting hang/crash is not normal; stop and report it. Do not delete saves, users or game databases for an update. An older package may not automatically downgrade a newer helper.
 
-**Hardware decoding is not active in this RC.** YouTube defaults to 480p for smoother playback. H.265/HEVC, DRM and streams above 1080p are unsupported. A recognised format does not guarantee every remote source will play. Watch Together is not included.
+## 🧪 Testing and privacy
 
-## 📸 Current interface previews
+Test boot, internal/USB games, Quick Menu, requests/messages, top-bar panels, music, local/stream video and phone notifications. Include build/model/firmware/HEN, steps and exact error. Export relevant logs and redact secrets, private messages and pairing details. [Full checklist](docs/TESTING-RC2.13.md) · [Report an issue](https://github.com/WetOttersPocket/NovaCore/issues).
 
-These are mock-ups from earlier real console captures, not live screenshots of this RC2.1 package.
-
-![Quick Menu volume preview](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.1/slider-preview.png)
-
-## 📸 Earlier console captures
-
-![YouTube browsing on PS4](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.2-RC1/youtube-console-latest.jpg)
-
-*Actual PS4 capture of YouTube browsing from the earlier RC.*
-
-![Nova Quick Menu in a game](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.0-RC1/quick-menu-in-game.jpg)
-
-*Quick Menu capture from the earlier RC; its appearance can vary with your theme.*
-
-## 🧪 Help test
-
-Read [Known issues](KNOWN-ISSUES.md), then use **Issues → Bug report**. Include the exact version, PS4 model, firmware, GoldHEN version, steps and outcome. For playback, say whether picture and sound worked. [Reporting guide](CONTRIBUTING.md).
-
-Remove private details from screenshots/logs before sharing. Never post tokens, passwords, pairing PINs, console IPs or stream URLs containing credentials.
-
-## 📜 Credits & source status
-
-NovaCore by **WetOttersPocket**, with LethalLadyT, testers and the upstream homebrew community. [Third-party credits and licences](THIRD-PARTY-NOTICES.md).
-
-This is the public **distribution and reporting** repository. NovaCore's application source remains private during the RC, with open sourcing planned after further fixes. Public binaries do not grant an open-source licence to the app; third-party licences continue to apply.
-
-Optional PayPal: **NovaCore1337@yahoo.com**. Donations do not affect downloads or tester access. 🦦
+The application source stays **private** during this RC. This repository contains public documentation/previews, not private app/plugin source. Downloads remain free; no donation or Discord membership required. [Third-party credits](THIRD-PARTY-NOTICES.md).

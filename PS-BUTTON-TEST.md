@@ -1,3 +1,11 @@
+# Quick Return — latest RC
+
+**Hold touchpad for about half a second → Return to Nova → ✕.** This is Nova's quick return from a game or Sony dashboard. A normal PS-button tap still opens Sony's dashboard.
+
+Test Quick Menu opening/closing, Music controls, Social Back and return after a game launch. Use [RC2.13 checklist](docs/TESTING-RC2.13.md). Earlier standalone helper instructions below are historical and should not override the current release's bundled component flow.
+
+---
+
 # DEV PS-button test
 
 TESTER does not enable this experimental route. In DEV, open Settings → Startup

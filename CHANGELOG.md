@@ -2,6 +2,34 @@
 
 Current release notes take precedence over older claims where behaviour has changed.
 
+## [1.0.4-RC2.13] — 2026-11-23
+
+Release-candidate notes published ahead of the owner's PKG upload. Latest console acceptance pending. Changes below collect the private stages since public RC2.1.
+
+### Added and changed
+
+- **RC2.13:** gamercard Online light and separate pink Playing line using the tracked running game; no activity for hidden/sharing-off profiles. Clear stale activity at worker startup. Same local MP4 input fix asRC2.12.
+- **RC2.12:** pinned read-only local media input with64-bit seeking for playback/posters; local errors no longer suggest geo-blocking. Exact reported MP4 metadata and first audio/video frames tested on a computer, not confirmed on PS4.
+- **RC2.11:** explicit Nova music-folder scan;300 → 1,000 tracks; Audio>Local files; bounded MP3 embedded art; film embedded cover preference. Gamercard online/hidden indicator, trophy icons/counts, Up card focus/Cross Profile. Closing clears stale panel focus.
+- **Phone service:** real Web Push, notification permission/test/off controls, Home Screen instructions, separate private subscription state, paired-phone auth, restart-safe inbox/cursors. No Friends setup required for YouTube. Six push tests +27 regression checks passed; real phone delivery needs testing.
+- **RC2.10:** full IPTV.org index rather than Movies-only source; up to 20,000 entries, category ordering, logos/fallbacks, NovaFlix default view, offline/geo flags and per-session failed-channel hiding. Local films sent through FFmpeg; Capture gallery kept separate.
+- **RC2.9:** dedicated top-bar Profile/Friends/Messages panels; show requests even with no accepted friends; validated badges/popups after committed sync. Custom HTTP(S), redirects and live-playlist child readers.
+- **RC2.8:** Social font-cache/text bounds and42-key layout; M3U metadata/logos; deadline/cancellation checks; Captures removed only from NovaFlix.
+- **RC2.7:** top-bar Profile separated from Quick Menu routing.
+- **RC2.6:** submenu Back separated from full Close, input lease retained; public-only friend-code projection readable without exposing credentials; bounded network retry and gamercard layout.
+- **RC2.5:** complete QM Social actions/live sync candidate; Friends/Profile together, requests/messages/history, inline controller keyboard, privacy/QR linking and chosen pictures; external Store route validation. Find before System.
+- **RC2.4:** resident Social cards retained inside existing Quick Menu; fix for immediate focus-guard closing; paging/subpage Back and legacy-toggle-independent action bridge.
+- **RC2.3:** executable packaging/layout repair for the malformed private build; one writable memory range and retained build guard; no user-data reset.
+- **RC2.2 and preceding private stages:** Friends service update, preserved four-character code issuance with six-character readiness, native identity/requests/list/pictures/privacy, message history/unread notifications,30-day Nova-name cooldown, opt-in player discovery, Discord-link controls, full installed-app Store picker and independent YouTube device setup. Original one-to-one message retention is30days and not E2E. Existing group/voice paths retained rather than claimed reimplemented.
+
+### Retained
+
+Quick Menu over Nova/dashboard/games, touchpad return, music controls, themes/Theme Studio,13 Library layouts, custom start tab, folders/case actions/trophies, six main UI languages, media/Jellyfin/streams/YouTube, radio, tools/news/backups and replaceable stores. Existing privacy/off switches/crash guards remain. Nova's application/plugin source stays private.
+
+### Still under test
+
+Local MP4/live streams; latest startup/USB game launches; Social rendering/back/badges; phone delivery; Store redirection and theme persistence. Sony system avatar writer stays disabled; local Sony-name writing not included; Discord community-member feed not enabled. [Full known issues](KNOWN-ISSUES.md).
+
 ## [1.0.4-RC2.1] — 2026-11-21
 
 Experimental public test; owner reports installed and running. Package integrity/identity checked. The preceding test build’s HEN-startup crash cause remains unresolved; this release does not claim a verified startup fix.

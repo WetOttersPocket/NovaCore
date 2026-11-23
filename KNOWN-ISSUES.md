@@ -1,16 +1,36 @@
-# Known issues — v1.0.4-RC2.1
+# Known issues — v1.0.4-RC2.13
 
-- **Unresolved startup issue:** the preceding 03.07 test build froze/crashed during HEN startup. Troubleshooting did not identify the cause. RC2.1 is reported running by the owner; automatic HEN startup remains unverified. Stop testing if a crash occurs.
-- Verified package identity: **03.08**, bundled dashboard plugin **d59 / 94409**. These package checks do not establish that all runtime features work.
-- Store shortcut selection, trophy artwork, bottom-bar hiding, theme refresh, media volume and YouTube sync need testing in the final package.
-- A Store press immediately after landing on its tile may still reach Sony’s screen.
-- Firmware 13.52 is not confirmed. The owner’s established test setup is PS4 Slim / 13.02 / GoldHEN. Do not update firmware for Nova.
-- YouTube defaults to 480p. Hardware video decoding is not active. Watch Together is not included.
-- Nova’s dashboard notification panel remains off; the bell uses Sony’s normal list.
-- Nova Theme 2 may need selecting again after reboot.
+The PKG will be attached separately. Latest code/build/host tests do not establish PS4 acceptance.
 
-## Reporting and controls
+## Playback
 
-Hold touchpad → Return to Nova → Cross for Quick Return. A normal PS tap still opens Sony's dashboard.
+- **Local MP4:** RC2.11 failed before decoding on a reported H.264/AAC file. The file's tables were valid. RC2.12/13 use a new pinned,64-bit local reader; exact metadata and first picture/audio frames passed host tests. Console playback remains unconfirmed.
+- **Live channels:** current console logs show sources refusing requests and live playlists failing to open segments. The network-reader work is a candidate fix, not a guarantee all streams work. Playback is actively being fixed.
+- IPTV.org is a live-channel list, not on-demand movies. Supplied logos may fail or be absent; branded fallbacks remain. Unknown geo restrictions cannot be filtered perfectly before trying playback.
+- H.265/HEVC, DRM and above-1080p remain unsupported. MP4 is a container, not a codec guarantee. Hardware decoding and software fallback availability do not prove a given stream plays on PS4.
 
-Keep your previous working package. Do not repeatedly reproduce a freeze or restart the console just to get logs. Report the exact build, console model, firmware, HEN version, steps and outcome. Redact credentials, account details and pairing codes. See [reporting guide](CONTRIBUTING.md).
+## Quick Menu, startup and games
+
+- Back/Close, Social font/keyboard bounds, stale top-bar focus and dedicated Profile/Friends/Messages panel fixes require repeated real-console checks.
+- Startup executable-layout repair passed build checks; full HEN/auto-start flow still needs confirmation on the latest complete package. Stop on a crash; do not repeat for logs.
+- USB titles failing from Sony's dashboard too have been reported. No database-corruption cause or automatic database repair is claimed. Do not delete/rebuild user data as a workaround without a separate backup/recovery plan.
+- A Store press immediately after landing on the tile may still reach Sony's screen. The latest selector/redirect changes need internal/external app testing.
+- PS button still opens Sony's dashboard; Nova return is **hold touchpad → Return to Nova → ✕**.
+- Nova Play/System Link is game-specific. Universal replacement matchmaking is not included.
+
+## Social and phone
+
+- Friend/request/message operations need the service and enabled components. Latest badges and empty-list request fixes need two-tester validation.
+- Game activity uses Nova's existing tracked running title; it does not identify every unrecognised app. Missing/unshared activity is hidden. Trophy totals require a Nova trophy refresh; unavailable totals show a dash.
+- Nova display-name changes are limited to once per 30 days. This is not a PSN Online ID change. Sony local-name writing is not implemented; Sony profile-picture writing remains disabled pending its separate spare-profile test.
+- Discord community-member feed is not enabled. QR linking does not expose all Discord friends or grant unsupported console SDK access.
+- Messages pass through the server, are not end-to-end encrypted and are kept there up to 30 days.
+- Real phone push service is live, with permission required. On iPhone install to Home Screen; browser/OS settings can block delivery. The closed-page delivery check still needs a real phone. Push does not auto-approve playback.
+
+## Other
+
+- Six languages cover the main UI; deeper pages/source content can remain English. Wider language/firmware/model testing is pending;13.52 is not confirmed.
+- Some optional Series/Switch/Console Mix views and theme persistence remain under polish/testing. Earlier nebula previews are not proof of inclusion in a particular package.
+- Generated images are design previews; do not treat them as hardware test results.
+
+Keep previous builds/settings. Do not publish credentials, pairing state or private messages. See [test checklist](docs/TESTING-RC2.13.md). Historical [RC2.1 issues](docs/archive/KNOWN-ISSUES-RC2.1.md) are retained.
