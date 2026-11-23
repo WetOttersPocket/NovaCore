@@ -1,61 +1,63 @@
-# 🎮 NovaCore v1.0.4-RC2.14 — Quick Menu input fixes
+![NovaCore RC2.14 banner](https://raw.githubusercontent.com/WetOttersPocket/NovaCore/main/docs/screenshots/v1.0.4-rc2.14/NovaCore-v1.0.4-RC2.14-Banner.png)
 
-A small follow-up to RC2.13, targeting the problem where navigating **Nova Quick Menu also moved the game or PS4 dashboard underneath**.
+# 🎮 NovaCore v1.0.4-RC2.14 — Quick Menu, game status & startup
 
-📦 **PKG upload pending:** the owner will attach `NovaCore-v1.0.4-RC2.14.pkg` here. The matching checksum is already attached. This is a **test candidate**—built and regression-tested on PC, with actual PS4 input isolation still awaiting confirmation.
+RC2.14 now includes the game-status, return-to-Nova and boot-artwork changes alongside its Quick Menu input fixes. Everything stays in **RC2.14**.
 
-## 🛠️ Changed and fixed
+📦 **The refreshed PKG is ready locally; owner upload pending.** Use the matching checksum below and **helper 94422**. The earlier RC2.14 checksum/helper 94421 has been superseded. This is a test candidate: build and computer-side checks passed; the refreshed package has **not been tested on a PS4**.
 
-- **Quick Menu takes focus while open**, rather than passing focus through to the background.
-- **Buttons and sticks are consumed by the visible menu**, including when a game is behind it.
-- **Background dashboard shortcuts are blocked while QM is open**, so its navigation should not trigger Store or other dashboard actions.
-- **Closing returns input normally**, including releasing held closing buttons before the background sees them.
-- **Failure handling releases focus**, even if removing the menu scene fails. Existing crash guards remain.
+## 🛠️ Added, changed and fixed
 
-The existing Quick Menu layout, Social gamercard, Music controls and return-to-Nova controls are retained. This does not promise to pause the game itself.
+- 🎮 **Playing status:** the helper checks the running game independently of Nova's launch screen. It can recognise games opened from Nova or Sony's dashboard, using the Library's saved game names, and sends activity updates while Nova is in the background.
+- 🟢 **Gamercard & friends:** the existing green Online light and pink Playing line use that activity. Closing the game clears it; updates retry if a request fails. Appear offline and game-sharing settings still apply.
+- ⚡ **Return to Nova:** choosing Return in Quick Menu now tells Nova to clear a completed game's launch screen straight away, instead of relying on its old suspension/20-second timeout. This targets the long Launching… wait; actual return time needs your PS4 test.
+- 🌌 **Boot artwork:** the logo/loading ring stays up for at least seven seconds, then waits for the current screen's queued artwork and dashboard readiness to settle. A timeout remains for missing artwork; this does not download the entire Library before opening.
+- 🔘 **Quick Menu input:** retained focus and input protections target the problem where menu navigation also moved the game/dashboard underneath. Closing or a menu failure returns focus. **Game-side input isolation still needs console confirmation.**
+- 🏎️ **Dashboard performance:** hidden Quick Menu updates now go idle after one final cleanup pass. Profile-picture scans are shared briefly instead of repeated by each panel, and idle game discovery is rate-limited. The aim is less dashboard work without changing the layout; actual smoothness still needs your console check.
 
-## ✅ Included from RC2.13
+The Quick Menu design, Social controls, Music and existing features stay in place. No game saves, user data or game databases were changed. No friend-service update is required for these changes.
 
-Friends, requests and messages in Social; green Online indicator and pink Playing line; trophy icons/counts; gamercard focus controls; local MP3 scanning/artwork; independent YouTube setup and Phone Link notifications. The local MP4 file-reader fix candidate is retained—**actual PS4 video playback is still not confirmed**.
+![Gamercard design preview](https://raw.githubusercontent.com/WetOttersPocket/NovaCore/main/docs/screenshots/v1.0.4-rc2.13/gamercard-playing-preview.png)
 
-![Gamercard design retained from RC2.13](https://raw.githubusercontent.com/WetOttersPocket/NovaCore/main/docs/screenshots/v1.0.4-rc2.13/gamercard-playing-preview.png)
+*Generated desktop design preview with demonstration data, retained from RC2.13. It is not a screenshot proving the refreshed build on a console.*
 
-*Generated desktop design preview with demonstration data, retained from RC2.13. The input fix does not redesign the menu; this is not a console screenshot.*
+## ✅ Retained from RC2.13
 
-## 📥 Install and test
+Friends, requests and messages in Social; trophy pictures/counts; gamercard focus controls; local music scanning/artwork; independent YouTube setup and Phone Link notifications. The local MP4 reader fix candidate is retained—**PS4 playback is still unconfirmed**.
 
-GoldHEN is required. Keep your last working package and settings. Do not update firmware for Nova.
+## 📥 Install & test
 
-1. Once attached, download **RC2.14** and its matching checksum from this release's Assets.
-2. Install with your usual HEN Package Installer. **Open Nova once**, then fully restart and enable GoldHEN to load the updated helper.
-3. **Test on Sony's dashboard first:** hold touchpad, then try D-pad, sticks, L1/R1 and Cross. Only the Quick Menu should respond.
-4. Check Social submenu Back, root Circle and touchpad close. Release all buttons; normal dashboard controls should return.
-5. Repeat from a **safe pause/menu screen in a game**. Check its menu/camera does not respond to QM navigation, and controls return after closing.
+GoldHEN is required. Keep your last working build and settings; do not update firmware for Nova.
 
-To return to Nova: **hold touchpad → Return to Nova → ✕**. A normal PS-button tap still opens Sony's dashboard.
+1. Once the owner attaches it, download **RC2.14** and check it against the checksum below. Do not mix it with the earlier same-name candidate.
+2. Install normally, **open Nova once**, then fully restart and enable GoldHEN so the updated helper loads. Check for **94422**.
+3. On Sony's dashboard first, **hold touchpad** and try D-pad, sticks, L1/R1 and ✕. Only QM should respond. Close it and check normal controls return. Repeat from a safe game menu.
+4. Open a game from Nova, then check your gamercard and a friend's view after Social refresh. Also check a Sony-launched game. Test Appear offline/sharing off, then close the game and check its activity clears.
+5. **Hold touchpad → Return to Nova → ✕**. Time the return and check whether the long Launching… wait is gone. A normal PS-button tap still opens Sony's dashboard.
+6. Cold-start Nova: check the loading ring stays animated and visible artwork is ready when the dashboard appears. Missing/offline artwork should not leave an endless loading screen.
 
-## 🧪 Test status and known issues
+## 🧪 Known issues & reporting
 
-The actual input-hook and scene functions passed computer-side checks for buttons/sticks, background shortcuts, close-release behaviour, failed scene removal and controller ownership. Social Back/Close and gamercard privacy checks also passed. The helper was built twice identically, and all **420 extracted package files** were checked.
+Console acceptance is pending. Game detection depends on the existing running-app query and Nova's Library catalogue; an unavailable game name may show its title ID. Social changes follow its refresh cycle. A short activity lease expires if the helper stops renewing it.
 
-**Those checks do not prove that every game's independent controller input is blocked on real hardware.** Please confirm on your PS4 before calling the issue fixed. Stop if input gets stuck or the console freezes; do not repeatedly reproduce it for logs.
+Playback, full HEN auto-start, USB-game compatibility, Store redirection and actual phone-notification delivery still need hardware checks. No guarantee is made that every game stops receiving input while QM is open. Stop on a crash/freeze; don't repeatedly trigger one just to get logs.
 
-Existing playback, startup/USB-game compatibility, Store redirection and phone-delivery checks remain open. See [known issues](https://github.com/WetOttersPocket/NovaCore/blob/main/KNOWN-ISSUES.md). An older PKG may not automatically downgrade a newer resident helper; retain your previous verified recovery files. Do not delete user data, saves or game databases to troubleshoot.
+Report **build/helper, firmware, console model, GoldHEN, launch route and what happened**. Include return/boot timings, a photo and relevant `qm-overlay.log`, `game-launch.log` or boot log if available. Remove personal information. Never send tokens or private configuration.
 
-Report the exact build, console model, firmware, GoldHEN version, what was behind QM and which controls leaked. Include a photo and `qm-overlay.log` where available, with private details removed.
-
-## 🔎 Exact package
+## 🔎 Refreshed package
 
 | Item | Value |
 |---|---|
 | File | `NovaCore-v1.0.4-RC2.14.pkg` |
 | Size | `292,683,776 bytes` |
 | Package version | `03.27` |
-| Resident helper | `94421` |
-| SHA-256 | `34437b4ed641156f584e35f8009a58307a369daf87a8a63f1c8854ef3025c395` |
+| Resident helper | `94422` |
+| SHA-256 | `22d6b36057ffcbee667c29f0906dd954eebcf3052e0923c321322306aa8f2327` |
 
-**No PKG is attached yet.** Upload only this exact build here; RC2.13 has its own release and checksum.
+All **420 extracted files** checked. Helper built twice identically, with unchanged imports and no new warnings. Focus/input, Social navigation/privacy, activity publication, boot gating and return guards passed computer-side tests. These checks do not replace PS4 testing.
 
-[Full dashboard features and RC2.13 changes](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13) · [Changelog](https://github.com/WetOttersPocket/NovaCore/blob/main/CHANGELOG.md) · [Discord](https://discord.gg/cjgA8T94E)
+**Owner will attach the PKG.** Application/plugin source remains private during the RC; third-party components retain their licences. Previous local builds are retained for recovery; an older installer may not automatically downgrade a resident helper.
 
-NovaCore by **WetOttersPocket** 🦦. Application/plugin source remains private during the RC. Third-party components retain their licences. No private source, configuration or logs are release assets.
+[Full dashboard features](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13) · [Changelog](https://github.com/WetOttersPocket/NovaCore/blob/main/CHANGELOG.md) · [Known issues](https://github.com/WetOttersPocket/NovaCore/blob/main/KNOWN-ISSUES.md) · [Discord](https://discord.gg/cjgA8T94E)
+
+NovaCore by **WetOttersPocket** 🦦

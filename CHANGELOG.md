@@ -2,10 +2,15 @@
 
 Current release notes take precedence over older claims where behaviour has changed.
 
-## [1.0.4-RC2.14] — 2026-11-23
+## [1.0.4-RC2.14] — 2026-11-23 (refreshed)
 
-- Candidate change for Quick Menu navigation also reaching the game/dashboard: focusable/frontable overlay with focus pass-through disabled while open; background shortcuts suppressed; visible-menu samples consumed even with a game behind.
-- Closing/failure returns focus before removing the scene, including removal failure. Input tests, Social Back/Close and privacy checks passed. **Actual PS4 isolation remains unverified.** Separate release candidate, not included in RC2.13; PKG upload pending.
+- 🎮 Running-game detection independent of Nova's launch state, including Sony-launched games; catalogue names and existing running-app queries, without changing the launch/watchdog state.
+- 🟢 Resident activity publishing/renewal to Friends, clear on game close and retry on failure. Existing offline/privacy controls retained.
+- ⚡ Explicit QM Return clears a completed launch screen without waiting for the old 20-second heuristic. Actual console return speed unverified.
+- 🌌 Boot minimum seven seconds plus stable visible-artwork readiness; existing loading ring and bounded fallback retained.
+- 🔘 Existing RC2.14 focus/input fixes retained: background shortcuts suppressed, visible-menu input consumed and focus released on close/failure. Real game input isolation remains unverified.
+- 🏎️ Hidden Quick Menu avoids repeated UI updates, profile-picture scans share a short per-user cache, and idle game discovery is rate-limited. Immediate opening and final close cleanup retained; console performance unverified.
+- Helper **94422**, package **03.27**, same public RC2.14 release. Updated checksum supersedes the initial candidate. Two reproducible helper builds, unchanged imports/warnings, full package verification and host regression checks passed. **Not console-tested; owner PKG upload pending.**
 
 ## [1.0.4-RC2.13] — 2026-11-23
 

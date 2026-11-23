@@ -1,4 +1,4 @@
-![NovaCore banner](docs/screenshots/v1.0.4-rc2.13/NovaCore-v1.0.4-RC2.13-Banner.png)
+![NovaCore banner](docs/screenshots/v1.0.4-rc2.14/NovaCore-v1.0.4-RC2.14-Banner.png)
 
 # NovaCore 🦦
 
@@ -10,9 +10,9 @@ A free, customisable PS4 dashboard by **WetOttersPocket**. Games, media, friends
 
 📦 **RC2.14 PKG upload pending.** Its notes and matching checksum have their own release page. The owner's RC2.13 package remains available on its separate release.
 
-**RC2.14 targets Quick Menu navigation also reaching the game/dashboard underneath.** It requests focus while open, suppresses background shortcuts and returns input on close/failure. Host checks passed; **actual PS4 input isolation still needs testing**. It retains RC2.13 Friends/gamercard, Music/art, independent YouTube setup and Phone Link notifications, plus the unconfirmed local MP4 fix candidate.
+**RC2.14 now targets game status, slow return, boot artwork and Quick Menu input.** The refreshed helper publishes current-game activity while Nova is in the background; explicit QM return clears completed launch screens without the old timeout; boot waits longer for visible artwork. The input-focus protections remain. **Use helper 94422 and the refreshed checksum. Build/host tests passed; all new PS4 behaviour still needs confirmation.** Existing Friends, Music, YouTube and Phone Link features are retained.
 
-The top banner artwork was made for the larger RC2.13 feature update. This minor follow-up keeps its interface. **Playback issues are still being investigated**; see [known issues](KNOWN-ISSUES.md).
+The banner is a generated desktop design preview for refreshed RC2.14, not a console screenshot. The interface is retained. **Playback issues are still being investigated**; see [known issues](KNOWN-ISSUES.md).
 
 ## 🎮 Quick Menu and return to Nova
 

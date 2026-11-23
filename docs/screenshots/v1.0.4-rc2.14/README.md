@@ -1,0 +1,1 @@
+RC2.14 banner: generated with the built-in image tool from the RC2.13 banner, preserving the Nova mark and neon galaxy style. Prompt: change version to v1.0.4-RC2.14, subtitle to QUICK MENU / PLAYING STATUS / STARTUP, strapline REFRESHED TEST CANDIDATE; retain DESIGN PREVIEW and attribution. Demonstration Social data, not a PS4 capture or hardware verification.

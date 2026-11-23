@@ -11,6 +11,9 @@ The RC2.13 PKG remains on its release; RC2.14 has a separate release with instal
 
 ## Quick Menu, startup and games
 
+- Refreshed RC2.14/helper94422 targets missing current-game status, the long return Launching screen and artwork readiness at boot. Host checks passed, console acceptance pending. Use the refreshed checksum; earlier helper94421 is superseded. Activity requires a successful running-app query and Social refresh. Return changes the completed launch-screen handling, not the underlying system focus API.
+
+
 - **New report:** QM navigation can also control the dashboard/game underneath. Avoid it during live gameplay until confirmed fixed. RC2.14 is a separate input-focus candidate with host checks passed; console isolation is still unverified. It is not included in the RC2.13 download.
 
 - Back/Close, Social font/keyboard bounds, stale top-bar focus and dedicated Profile/Friends/Messages panel fixes require repeated real-console checks.
