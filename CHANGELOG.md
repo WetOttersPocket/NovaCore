@@ -2,6 +2,21 @@
 
 Current release notes take precedence over older claims where behaviour has changed.
 
+## [1.0.4-RC2.14] — 2026-11-23 (QM hotfix 94424)
+
+Sorry for the extra download, everyone. The last update reduced dashboard lag, but it also stopped the Quick Menu and top-bar panels from opening on the reported console. Thanks for sticking with the testing and letting me know ❤️
+
+- 🔘 Corrected the compatibility check that blocked the menu on firmware without certain menu-focus features.
+- 🧭 Kept the opening controls active while skipping unnecessary hidden-menu redraws.
+- 🏎️ Kept the lag reductions. The owner reported less dashboard lag and working game-hover panels in the previous build.
+- 📦 Only the bundled helper changed. The Nova app, settings and other RC2.14 additions stay in place.
+
+**Install over RC2.14 → open Nova once → fully restart PS4 → enable GoldHEN normally.** Then hold touchpad and check the dashboard Profile/Friends/Messages panels.
+
+Build and computer-side checks passed. **Hotfix console confirmation is pending**, including game-input isolation. Check the game underneath stays still while using QM; close it and report if it responds.
+
+[Corrected PKG](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.14/NovaCore-v1.0.4-RC2.14-QM-HOTFIX-94424.pkg) · SHA-256: `2880de4fec6dd5280608f98af7bb5ec4c408f87b3f09933c65c7fbedbbc159e2`.
+
 ## [1.0.4-RC2.14] — 2026-11-23 (refreshed)
 
 - 🎞️ Experimental FFmpeg software HEVC up to 1080p SDR; H264 hardware/software decoders retained. HDR/DRM/4K rejected; console acceptance pending. HTTPS MP4 uses FFmpeg.
@@ -16,7 +31,7 @@ Current release notes take precedence over older claims where behaviour has chan
 - 🌌 Boot minimum seven seconds plus stable visible-artwork readiness; existing loading ring and bounded fallback retained.
 - 🔘 Existing RC2.14 focus/input fixes retained: background shortcuts suppressed, visible-menu input consumed and focus released on close/failure. Real game input isolation remains unverified.
 - 🏎️ Hidden Quick Menu avoids repeated UI updates, profile-picture scans share a short per-user cache, and idle game discovery is rate-limited. Immediate opening and final close cleanup retained; console performance unverified.
-- Helper **94422**, package **03.27**, same public RC2.14 release. Updated checksum supersedes the initial candidate. Two reproducible helper builds, unchanged imports/warnings, full package verification and host regression checks passed. **Not console-tested; owner PKG upload pending.**
+- Helper **94422**, package **03.27**, same public RC2.14 release. Updated checksum supersedes the initial candidate. Two reproducible helper builds, unchanged imports/warnings, full package verification and host regression checks passed. **Historical helper 94422: superseded by hotfix 94424 above.**
 
 ## [1.0.4-RC2.13] — 2026-11-23
 

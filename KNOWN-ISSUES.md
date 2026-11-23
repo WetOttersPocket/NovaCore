@@ -1,6 +1,6 @@
 # Known issues — v1.0.4-RC2.14
 
-The RC2.13 PKG remains on its release; RC2.14 has a separate release with installer upload pending. Latest code/build/host tests do not establish PS4 acceptance.
+The RC2.13 PKG remains on its release; RC2.14 has a separate release with QM hotfix 94424 attached. Latest code/build/host tests do not establish PS4 acceptance.
 
 ## Playback
 
@@ -10,6 +10,9 @@ The RC2.13 PKG remains on its release; RC2.14 has a separate release with instal
 - Refreshed RC2.14 adds **experimental software H.265/HEVC**, up to 1080p SDR, including 8/10-bit input converted to 8-bit output. Actual PS4 playback/performance is unverified; begin with 720p. HDR, DRM and4K remain unsupported. `hevc.off` disables only HEVC. HTTPS MP4 now uses the codec-aware FFmpeg path. MP4 is a container, not a codec guarantee. Hardware decoding and software fallback availability do not prove a given stream plays on PS4.
 
 ## Quick Menu, startup and games
+
+- **94424 hotfix:** targets QM/top-bar panels not opening. The previous focus check required features absent on the reported firmware. Compatible attachment is restored without that requirement. Host checks passed; console confirmation pending. Input isolation relies on the existing GamePad hook where scene-focus APIs are absent—test before gameplay.
+
 
 - Refreshed RC2.14/helper94422 targets missing current-game status, the long return Launching screen and artwork readiness at boot. Host checks passed, console acceptance pending. Use the refreshed checksum; earlier helper94421 is superseded. Activity requires a successful running-app query and Social refresh. Return changes the completed launch-screen handling, not the underlying system focus API.
 

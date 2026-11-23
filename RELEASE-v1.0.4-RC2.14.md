@@ -4,7 +4,20 @@
 
 RC2.14 now includes the game-status, return-to-Nova and boot-artwork changes alongside its Quick Menu input fixes. Everything stays in **RC2.14**.
 
-📦 **The refreshed PKG is ready locally; owner upload pending.** Use the matching checksum below and **helper 94422**. The earlier RC2.14 checksum/helper 94421 has been superseded. This is a test candidate: build and computer-side checks passed; the refreshed package has **not been tested on a PS4**.
+## 🛠️ Quick Menu opening hotfix — 23 November
+
+Sorry for the extra download, everyone. The last update reduced dashboard lag, but it also stopped the Quick Menu and top-bar panels from opening on the reported console. Thanks for sticking with the testing and letting me know ❤️
+
+- 🔘 Corrected the compatibility check that blocked the menu on firmware without certain menu-focus features.
+- 🧭 Kept the opening controls active while skipping unnecessary hidden-menu redraws.
+- 🏎️ Kept the lag reductions. The owner reported less dashboard lag and working game-hover panels in the previous build.
+- 📦 Only the bundled helper changed. The Nova app, settings and other RC2.14 additions stay in place.
+
+**Install over RC2.14 → open Nova once → fully restart PS4 → enable GoldHEN normally.** Then hold touchpad and check the dashboard Profile/Friends/Messages panels.
+
+Build and computer-side checks passed. **Hotfix console confirmation is pending**, including game-input isolation. Check the game underneath stays still while using QM; close it and report if it responds.
+
+📥 **[Download the corrected hotfix PKG](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.14/NovaCore-v1.0.4-RC2.14-QM-HOTFIX-94424.pkg)** · helper **94424**. Choose **QM-HOTFIX-94424.pkg**; older RC2.14 packages are retained and superseded.
 
 ## 🛠️ Added, changed and fixed
 
@@ -39,8 +52,8 @@ Friends, requests and messages in Social; trophy pictures/counts; gamercard focu
 
 GoldHEN is required. Keep your last working build and settings; do not update firmware for Nova.
 
-1. Once the owner attaches it, download **RC2.14** and check it against the checksum below. Do not mix it with the earlier same-name candidate.
-2. Install normally, **open Nova once**, then fully restart and enable GoldHEN so the updated helper loads. Check for **94422**.
+1. Download **NovaCore-v1.0.4-RC2.14-QM-HOTFIX-94424.pkg** using the link above and check its matching checksum.
+2. Install normally, **open Nova once**, then fully restart and enable GoldHEN so the updated helper loads. Check for **94424**.
 3. On Sony's dashboard first, **hold touchpad** and try D-pad, sticks, L1/R1 and ✕. Only QM should respond. Close it and check normal controls return. Repeat from a safe game menu.
 4. Open a game from Nova, then check your gamercard and a friend's view after Social refresh. Also check a Sony-launched game. Test Appear offline/sharing off, then close the game and check its activity clears.
 5. **Hold touchpad → Return to Nova → ✕**. Time the return and check whether the long Launching… wait is gone. A normal PS-button tap still opens Sony's dashboard.
@@ -58,15 +71,15 @@ Report **build/helper, firmware, console model, GoldHEN, launch route and what h
 
 | Item | Value |
 |---|---|
-| File | `NovaCore-v1.0.4-RC2.14.pkg` |
+| File | `NovaCore-v1.0.4-RC2.14-QM-HOTFIX-94424.pkg` |
 | Size | `308,412,416 bytes` |
 | Package version | `03.27` |
-| Resident helper | `94422` |
-| SHA-256 | `7d4336d8d91d150e719345d6432bd200bd1e772a23f3a1197571e9f826eec281` |
+| Resident helper | `94424` |
+| SHA-256 | `2880de4fec6dd5280608f98af7bb5ec4c408f87b3f09933c65c7fbedbbc159e2` |
 
-All **432 extracted files** checked. Helper built twice identically, with unchanged imports and no new warnings. Focus/input, Social navigation/privacy, activity publication, boot gating and return guards passed computer-side tests. These checks do not replace PS4 testing.
+Hotfix package validated; **427 extracted payload files** compared. Only the bundled helper changed from the previous RC2.14 package. Helper built twice identically, with unchanged imports and no new warnings. Focus/input, Social navigation/privacy, activity publication, boot gating and return guards passed computer-side tests. These checks do not replace PS4 testing.
 
-**Owner will attach the PKG.** Application/plugin source remains private during the RC; third-party components retain their licences. Previous local builds are retained for recovery; an older installer may not automatically downgrade a resident helper.
+**The corrected hotfix PKG is attached.** Application/plugin source remains private during the RC; third-party components retain their licences. Previous local builds are retained for recovery; an older installer may not automatically downgrade a resident helper.
 
 [Full dashboard features](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13) · [Changelog](https://github.com/WetOttersPocket/NovaCore/blob/main/CHANGELOG.md) · [Known issues](https://github.com/WetOttersPocket/NovaCore/blob/main/KNOWN-ISSUES.md) · [Discord](https://discord.gg/cjgA8T94E)
 

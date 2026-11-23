@@ -8,9 +8,9 @@ A free, customisable PS4 dashboard by **WetOttersPocket**. Games, media, friends
 
 **[RC2.14 Quick Menu fix release](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.14)** · [Full RC2.13 feature update](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13) · [Changelog](CHANGELOG.md) · [Known issues](KNOWN-ISSUES.md) · [Discord](https://discord.gg/cjgA8T94E)
 
-📦 **RC2.14 PKG upload pending.** Its notes and matching checksum have their own release page. The owner's RC2.13 package remains available on its separate release.
+📦 **[Download RC2.14 QM hotfix 94424](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.14/NovaCore-v1.0.4-RC2.14-QM-HOTFIX-94424.pkg)**. Install over RC2.14, open Nova once, fully restart and enable GoldHEN. Older package superseded. [Changes](RELEASE-v1.0.4-RC2.14.md).
 
-**RC2.14 now targets game status, slow return, boot artwork and Quick Menu input.** The refreshed helper publishes current-game activity while Nova is in the background; explicit QM return clears completed launch screens without the old timeout; boot waits longer for visible artwork. The input-focus protections remain. **Use helper 94422 and the refreshed checksum. Build/host tests passed; all new PS4 behaviour still needs confirmation.** Existing Friends, Music, YouTube and Phone Link features are retained.
+**RC2.14 now targets game status, slow return, boot artwork and Quick Menu input.** The refreshed helper publishes current-game activity while Nova is in the background; explicit QM return clears completed launch screens without the old timeout; boot waits longer for visible artwork. The input-focus protections remain. **Use helper 94424 and the refreshed checksum. Build/host tests passed; all new PS4 behaviour still needs confirmation.** Existing Friends, Music, YouTube and Phone Link features are retained.
 
 The banner is a generated desktop design preview for refreshed RC2.14, not a console screenshot. The interface is retained. **Playback issues are still being investigated**; see [known issues](KNOWN-ISSUES.md).
 
@@ -40,7 +40,7 @@ Tap **Enable notifications** on the phone. iPhone users first add NovaCore to th
 
 NovaFlix opens directly to its catalogue. The provided IPTV.org source is **live TV**, grouped by category, with supplied logos or a branded fallback. Your own legal sources, local/USB films and Jellyfin remain. Captures stays in its separate gallery. Geo/offline flags and actual failures are filtered where detected, but source availability varies.
 
-**Local MP4 and live-stream playback remain under test.** The new local reader passed computer-side tests with a reported film's metadata and picture/audio samples; console success is not yet claimed. H.265/DRM/above-1080p are unsupported. [Full playback status](KNOWN-ISSUES.md).
+**Local MP4 and live-stream playback remain under test.** The new local reader passed computer-side tests with a reported film's metadata and picture/audio samples; console success is not yet claimed. Experimental H.265 up to 1080p SDR is included, with console playback unconfirmed; HDR/DRM/above-1080p remain unsupported. [Full playback status](KNOWN-ISSUES.md).
 
 ## 🌈 Make it yours
 
