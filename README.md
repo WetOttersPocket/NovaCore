@@ -4,15 +4,15 @@
 
 A free, customisable PS4 dashboard by **WetOttersPocket**. Games, media, friends and tools together, with a **Quick Menu inside Nova, on the PS4 dashboard and over games**.
 
-## 🌌 Latest: v1.0.4-RC2.13
+## 🌌 Latest: v1.0.4-RC2.14
 
-**[Release notes](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13)** · [Changelog](CHANGELOG.md) · [Known issues](KNOWN-ISSUES.md) · [Test checklist](docs/TESTING-RC2.13.md) · [Discord](https://discord.gg/cjgA8T94E)
+**[RC2.14 Quick Menu fix release](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.14)** · [Full RC2.13 feature update](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13) · [Changelog](CHANGELOG.md) · [Known issues](KNOWN-ISSUES.md) · [Discord](https://discord.gg/cjgA8T94E)
 
-📦 **[RC2.13 PKG and checksum are available in release Assets](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13).**
+📦 **RC2.14 PKG upload pending.** Its notes and matching checksum have their own release page. The owner's RC2.13 package remains available on its separate release.
 
-**New Quick Menu input report:** menu navigation can also move the game/dashboard underneath. Avoid it during live gameplay pending confirmation. A separate RC2.14 focus fix candidate has passed host checks and still needs console testing; it is not in the RC2.13 download. [Previous RC2.1 downloads](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.1) remain available with their own limitations.
+**RC2.14 targets Quick Menu navigation also reaching the game/dashboard underneath.** It requests focus while open, suppresses background shortcuts and returns input on close/failure. Host checks passed; **actual PS4 input isolation still needs testing**. It retains RC2.13 Friends/gamercard, Music/art, independent YouTube setup and Phone Link notifications, plus the unconfirmed local MP4 fix candidate.
 
-The latest candidate adds a more complete **QM Social gamercard, Friends/requests/messages, local MP3s and artwork, independent YouTube setup and real phone notifications**. Changes also address top-bar panels, unread markers, Back-button freezes, text sizing, Store redirects, streams and local MP4 input. **Current console playback problems are still being investigated**; built/tested does not mean confirmed on every console. See [known issues](KNOWN-ISSUES.md).
+The top banner artwork was made for the larger RC2.13 feature update. This minor follow-up keeps its interface. **Playback issues are still being investigated**; see [known issues](KNOWN-ISSUES.md).
 
 ## 🎮 Quick Menu and return to Nova
 

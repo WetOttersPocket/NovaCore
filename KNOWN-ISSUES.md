@@ -1,6 +1,6 @@
-# Known issues — v1.0.4-RC2.13
+# Known issues — v1.0.4-RC2.14
 
-The RC2.13 PKG is attached to its release. Latest code/build/host tests do not establish PS4 acceptance.
+The RC2.13 PKG remains on its release; RC2.14 has a separate release with installer upload pending. Latest code/build/host tests do not establish PS4 acceptance.
 
 ## Playback
 
