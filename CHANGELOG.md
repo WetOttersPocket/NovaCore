@@ -4,6 +4,12 @@ Current release notes take precedence over older claims where behaviour has chan
 
 ## [1.0.4-RC2.14] — 2026-11-23 (refreshed)
 
+- 🎞️ Experimental FFmpeg software HEVC up to 1080p SDR; H264 hardware/software decoders retained. HDR/DRM/4K rejected; console acceptance pending. HTTPS MP4 uses FFmpeg.
+- 💬 Official orbisRPC 1.1 ELF/Setup PKG bundled with pinned GitHub digests; explicit prepare action updated. No auto-install/start/link or credential access.
+- 🕹️ Removed overlapping L3/R3 + Triangle actions/hints; Library save-view moved to R3 menu and default tab remains in Settings.
+- 🗂️ Added saved per-user Automatic/Games/Apps/Classics Library overrides, with validated atomic storage and no source metadata/database writes.
+- ❓ Added in-app Help & FAQ, Phone Link/YouTube/Discord distinctions, original orbisRPC logo and credits. Shared RPC token-transfer wizard remains unimplemented.
+
 - 🎮 Running-game detection independent of Nova's launch state, including Sony-launched games; catalogue names and existing running-app queries, without changing the launch/watchdog state.
 - 🟢 Resident activity publishing/renewal to Friends, clear on game close and retry on failure. Existing offline/privacy controls retained.
 - ⚡ Explicit QM Return clears a completed launch screen without waiting for the old 20-second heuristic. Actual console return speed unverified.

@@ -15,6 +15,16 @@ RC2.14 now includes the game-status, return-to-Nova and boot-artwork changes alo
 - 🔘 **Quick Menu input:** retained focus and input protections target the problem where menu navigation also moved the game/dashboard underneath. Closing or a menu failure returns focus. **Game-side input isolation still needs console confirmation.**
 - 🏎️ **Dashboard performance:** hidden Quick Menu updates now go idle after one final cleanup pass. Profile-picture scans are shared briefly instead of repeated by each panel, and idle game discovery is rate-limited. The aim is less dashboard work without changing the layout; actual smoothness still needs your console check.
 
+- 🎞️ **Experimental H.265/HEVC:** software decoding added up to 1080p SDR, with 8/10-bit input converted to 8-bit output. H.264 hardware-first/fallback retained; HDR/DRM/4K unsupported. HEVC playback/smoothness still needs PS4 testing. HTTPS MP4 now uses the codec-aware FFmpeg path.
+- 💬 **Latest optional orbisRPC files:** official 1.1 ELF and Setup PKG bundled and hash-checked. Explicit preparation only; no automatic install/start/config replacement or account link. Full shared RPC wizard remains unfinished.
+- 🕹️ **Simpler Library controls:** removes L3/R3 + Triangle shortcuts. Save the view from R3's game menu; choose your start page in Settings. Triangle keeps its normal page action.
+- 🗂️ **Fix an item's category:** R3 → Library category cycles Automatic/Games/Apps/Classics and saves for this PS4 user. No game files or Sony databases changed.
+- ❓ **Help & FAQ:** Settings → System & About now explains controls, categories, Phone Link, YouTube, the PC Discord bridge, RPC and reporting. Original orbisRPC logo and maintainer credits included.
+
+![Library menu and Help desktop previews](https://raw.githubusercontent.com/WetOttersPocket/NovaCore/main/docs/screenshots/v1.0.4-rc2.14/usability/usability-overview.png)
+
+*Desktop UI previews from the candidate layout/text with demonstration data. Not console-tested screenshots.*
+
 The Quick Menu design, Social controls, Music and existing features stay in place. No game saves, user data or game databases were changed. No friend-service update is required for these changes.
 
 ![Gamercard design preview](https://raw.githubusercontent.com/WetOttersPocket/NovaCore/main/docs/screenshots/v1.0.4-rc2.13/gamercard-playing-preview.png)
@@ -49,15 +59,17 @@ Report **build/helper, firmware, console model, GoldHEN, launch route and what h
 | Item | Value |
 |---|---|
 | File | `NovaCore-v1.0.4-RC2.14.pkg` |
-| Size | `292,683,776 bytes` |
+| Size | `308,412,416 bytes` |
 | Package version | `03.27` |
 | Resident helper | `94422` |
-| SHA-256 | `22d6b36057ffcbee667c29f0906dd954eebcf3052e0923c321322306aa8f2327` |
+| SHA-256 | `7d4336d8d91d150e719345d6432bd200bd1e772a23f3a1197571e9f826eec281` |
 
-All **420 extracted files** checked. Helper built twice identically, with unchanged imports and no new warnings. Focus/input, Social navigation/privacy, activity publication, boot gating and return guards passed computer-side tests. These checks do not replace PS4 testing.
+All **432 extracted files** checked. Helper built twice identically, with unchanged imports and no new warnings. Focus/input, Social navigation/privacy, activity publication, boot gating and return guards passed computer-side tests. These checks do not replace PS4 testing.
 
 **Owner will attach the PKG.** Application/plugin source remains private during the RC; third-party components retain their licences. Previous local builds are retained for recovery; an older installer may not automatically downgrade a resident helper.
 
 [Full dashboard features](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13) · [Changelog](https://github.com/WetOttersPocket/NovaCore/blob/main/CHANGELOG.md) · [Known issues](https://github.com/WetOttersPocket/NovaCore/blob/main/KNOWN-ISSUES.md) · [Discord](https://discord.gg/cjgA8T94E)
 
 NovaCore by **WetOttersPocket** 🦦
+
+[Help & FAQ](https://github.com/WetOttersPocket/NovaCore/blob/main/docs/HELP-FAQ.md) · [Optional RPC guide and credits](https://github.com/WetOttersPocket/NovaCore/blob/main/docs/ORBISRPC-SETUP.md). The requested shared Nova/ShellUI RPC token-transfer wizard is **not implemented**; no token collection or automatic RPC authorisation has been added.

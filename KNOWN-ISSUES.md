@@ -7,7 +7,7 @@ The RC2.13 PKG remains on its release; RC2.14 has a separate release with instal
 - **Local MP4:** RC2.11 failed before decoding on a reported H.264/AAC file. The file's tables were valid. RC2.12/13 use a new pinned,64-bit local reader; exact metadata and first picture/audio frames passed host tests. Console playback remains unconfirmed.
 - **Live channels:** current console logs show sources refusing requests and live playlists failing to open segments. The network-reader work is a candidate fix, not a guarantee all streams work. Playback is actively being fixed.
 - IPTV.org is a live-channel list, not on-demand movies. Supplied logos may fail or be absent; branded fallbacks remain. Unknown geo restrictions cannot be filtered perfectly before trying playback.
-- H.265/HEVC, DRM and above-1080p remain unsupported. MP4 is a container, not a codec guarantee. Hardware decoding and software fallback availability do not prove a given stream plays on PS4.
+- Refreshed RC2.14 adds **experimental software H.265/HEVC**, up to 1080p SDR, including 8/10-bit input converted to 8-bit output. Actual PS4 playback/performance is unverified; begin with 720p. HDR, DRM and4K remain unsupported. `hevc.off` disables only HEVC. HTTPS MP4 now uses the codec-aware FFmpeg path. MP4 is a container, not a codec guarantee. Hardware decoding and software fallback availability do not prove a given stream plays on PS4.
 
 ## Quick Menu, startup and games
 
@@ -39,3 +39,7 @@ The RC2.13 PKG remains on its release; RC2.14 has a separate release with instal
 - Generated images are design previews; do not treat them as hardware test results.
 
 Keep previous builds/settings. Do not publish credentials, pairing state or private messages. See [test checklist](docs/TESTING-RC2.13.md). Historical [RC2.1 issues](docs/archive/KNOWN-ISSUES-RC2.1.md) are retained.
+
+## New usability checks
+
+Library category overrides, revised R3 menu and Help controls have passed host checks; test persistence, user separation and Circle/QM ownership on PS4. No category/source metadata or Sony game database edits are made. Latest optional orbisRPC 1.1 files are bundled and verified; the shared in-Nova/independent-ShellUI token-transfer wizard remains **unimplemented**. Preparing the bundle does not install, run or connect RPC.

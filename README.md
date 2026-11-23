@@ -79,3 +79,7 @@ A brief black screen/notices/Sony dashboard can occur during the established sta
 Test boot, internal/USB games, Quick Menu, requests/messages, top-bar panels, music, local/stream video and phone notifications. Include build/model/firmware/HEN, steps and exact error. Export relevant logs and redact secrets, private messages and pairing details. [Full checklist](docs/TESTING-RC2.13.md) · [Report an issue](https://github.com/WetOttersPocket/NovaCore/issues).
 
 The application source stays **private** during this RC. This repository contains public documentation/previews, not private app/plugin source. Downloads remain free; no donation or Discord membership required. [Third-party credits](THIRD-PARTY-NOTICES.md).
+
+## ❓ Help and setup
+
+[Help & FAQ](docs/HELP-FAQ.md) covers controls, categories, Phone Link and YouTube. [Optional orbisRPC guide](docs/ORBISRPC-SETUP.md) explains its separate setup and credits. Refreshed RC2.14 adds per-user category overrides and removes overlapping Triangle shortcuts. The full shared Nova/ShellUI RPC wizard is not implemented.

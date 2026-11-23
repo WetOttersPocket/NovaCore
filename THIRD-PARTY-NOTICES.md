@@ -1,4 +1,4 @@
-# Third-party notices — NovaCore v1.0.4-RC2.13
+# Third-party notices — NovaCore v1.0.4-RC2.14
 
 NovaCore by **WetOttersPocket** 🦦. Thanks to the upstream developers and service providers below. Third-party components retain their own licences; NovaCore does not claim ownership of them.
 
@@ -20,3 +20,9 @@ Store attribution: the PS4 Homebrew Store and its applications belong to their d
 
 These notices are not a licence for NovaCore's private application source, nor a claim of ownership of media, station artwork, game art or third-party services. The bundled licence/source material and applicable upstream terms continue to apply.
 Phone notification server: [web-push](https://github.com/web-push-libs/web-push), MIT; browsers use their own push service. IPTV channel metadata/logos belong to the relevant providers.
+
+## orbisRPC
+
+Optional payload/setup by [SirHumza, CyberMask367 and contributors](https://github.com/SirHumza/orbisRPC). The original logo is credited in the RPC guide and in-app Help; it is not Nova artwork. Upstream has no settled project licence; its work is not relicensed here. Nova account linking and orbisRPC account-session authentication are separate.
+
+RC2.14 rebuilds FFmpeg7.1.5 with its software HEVC decoder, preserving LGPLv3-or-later build settings and the existing H264/TLS patches. No libx265 encoder is linked into Nova. Build notes and licences are packaged under Media/licenses/FFmpeg/RC214-HEVC. Official optional orbisRPC 1.1 ELF and Setup PKG are hash-pinned; no credential is included.
