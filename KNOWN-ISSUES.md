@@ -1,4 +1,18 @@
-# Known issues — v1.0.4-RC2.14
+# Known issues — v1.0.4-RC2.18
+
+## Current test-build limits
+
+- Console acceptance is pending for launch, QM input isolation, top-bar panels, YouTube/local playback, TV margins, activity and cosmetic Sony name sync. Host checks do not establish that older console reports are resolved.
+- Community Themes client and independent host are built/tested; deployment is pending. Catalogue/upload may be unavailable. Local themes remain independent. Host limits: 20 immutable uploads per owner; no self-service withdrawal yet.
+- Two Nova name changes per rolling 60 days needs the staged server patch. Live server rules remain authoritative. Real PSN identity, accounts and saves are unchanged; Sony native picture writing stays disabled pending its separate test gate.
+- Optional orbisRPC 1.1 files remain bundled. The automatic all-in-one setup wizard is unfinished; no account-session collection is added.
+- Manual FPKG recovery is internal-title only and console-unverified. Verified backup and confirmation required. Active WAL, changed state or damaged backup block dispatch. External registration, damaged game content and failing drives are not guaranteed repairable. Do not repair a healthy database for testing.
+- Software HEVC remains experimental and CPU-limited: start at 720p SDR. No HDR/4K/DRM promise. Availability/geo restrictions/logos vary; a thumbnail is not proof of playback.
+- Theme samples illustrate choices and do not restyle resident QM. Global mute/privacy/safe mode remain authoritative. Verify save/cancel/copy on PS4. Native safe-area changes do not alter Sony resident panels.
+- Social Lounge preserves existing game/room compatibility; unsupported replacement matchmaking is not added.
+- Open Nova once after update, fully restart/HEN and avoid duplicate live helpers. An older PKG may not downgrade a higher installed helper; keep backups.
+
+## Historical reports (superseded where noted above)
 
 The RC2.13 PKG remains on its release; RC2.14 has a separate release with QM hotfix 94424 attached. Latest code/build/host tests do not establish PS4 acceptance.
 

@@ -2,6 +2,25 @@
 
 Current release notes take precedence over older claims where behaviour has changed.
 
+## [1.0.4-RC2.18] — 2026-11-24 (test pre-release, helper 94429)
+
+Combines private RC2.15–17 with RC2.18. Console-unverified; Community host and revised server name allowance await deployment.
+
+- Theme Store create tile and 59-row editor, visible palettes, Home/Library/QM samples, storage wallpaper picker and name/save/save-copy/upload choices.
+- Expanded materials, borders, colours, fonts, moving overlays and sounds; per-theme card-size/depth settings. Bebas Neue font/licence bundled.
+- Community catalogue/previews/separate-copy install and opt-in upload prepared; independent host tested but not deployed.
+- Nova Play main tab restored; Social Lounge with in-page Friends/requests/messages/profile and existing room compatibility.
+- Layout order: Nova Dashboard, Nova Lab, Nova Series, Nova Switch, then remaining layouts. Saved IDs retained.
+- Shared request-alert deduplication, avatars/last-online fallback, activity queries and consistent Nova cosmetic labels. No real PSN/account changes; Sony native-picture writer stays disabled.
+- QM CAPS/abc and L2 toggle. Two-name-changes/60-days client copy; matching server patch staged only.
+- Current top-icon focus handling rejects stale game focus. Dedicated panels and existing QM/input safeguards retained.
+- Playback crash/pixelation changes: software H264 routing, versioned crash guard, clearer resolver errors, same-packet retry and normal filtering.
+- Manual internal FPKG recovery: read-only scan, verified backup, double confirmation, separate pinned DB Rebuilder v0.2, result check and Apollo restore guidance. External-only entries report-only; not run on console.
+- Ordinary notices shortened to 2.5 seconds and deduplicated. Native content safe area; wallpaper full bleed.
+- Native/SELF/PKG checks passed; all 437 extracted files verified. Helper reproducible with baseline imports. Hardware acceptance pending.
+
+[Full notes and testing](RELEASE-v1.0.4-RC2.18.md)
+
 ## [1.0.4-RC2.14] — 2026-11-23 (QM hotfix 94424)
 
 Sorry for the extra download, everyone. The last update reduced dashboard lag, but it also stopped the Quick Menu and top-bar panels from opening on the reported console. Thanks for sticking with the testing and letting me know ❤️

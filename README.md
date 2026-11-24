@@ -1,18 +1,18 @@
-![NovaCore banner](docs/screenshots/v1.0.4-rc2.14/NovaCore-v1.0.4-RC2.14-Banner.png)
+![NovaCore banner](docs/screenshots/v1.0.4-rc2.18/banner.png)
 
 # NovaCore 🦦
 
 A free, customisable PS4 dashboard by **WetOttersPocket**. Games, media, friends and tools together, with a **Quick Menu inside Nova, on the PS4 dashboard and over games**.
 
-## 🌌 Latest: v1.0.4-RC2.14
+## 🌌 Latest: v1.0.4-RC2.18 — test pre-release
 
-**[RC2.14 Quick Menu fix release](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.14)** · [Full RC2.13 feature update](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.13) · [Changelog](CHANGELOG.md) · [Known issues](KNOWN-ISSUES.md) · [Discord](https://discord.gg/cjgA8T94E)
+**[Download RC2.18](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.18/NovaCore-v1.0.4-RC2.18.pkg)** · [Full release notes](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.18) · [Changelog](CHANGELOG.md) · [Known issues](KNOWN-ISSUES.md) · [Discord](https://discord.gg/cjgA8T94E)
 
-📦 **[Download RC2.14 QM hotfix 94424](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.14/NovaCore-v1.0.4-RC2.14-QM-HOTFIX-94424.pkg)**. Install over RC2.14, open Nova once, fully restart and enable GoldHEN. Older package superseded. [Changes](RELEASE-v1.0.4-RC2.14.md).
+Theme Studio with 59 editor rows and sample scenes, refreshed Social Lounge, top-bar focus changes, playback fixes and manual internal-title database recovery. Includes private RC2.15–17 updates and helper **94429**.
 
-**RC2.14 now targets game status, slow return, boot artwork and Quick Menu input.** The refreshed helper publishes current-game activity while Nova is in the background; explicit QM return clears completed launch screens without the old timeout; boot waits longer for visible artwork. The input-focus protections remain. **Use helper 94424 and the refreshed checksum. Build/host tests passed; all new PS4 behaviour still needs confirmation.** Existing Friends, Music, YouTube and Phone Link features are retained.
+**Build/package/host checks passed; PS4 acceptance is pending.** Community Themes hosting and the revised server name-change allowance are not deployed. Existing QM is retained; recovery is manual and has not been run on PS4. New images are web design previews with demo data. App source stays private.
 
-The banner is a generated desktop design preview for refreshed RC2.14, not a console screenshot. The interface is retained. **Playback issues are still being investigated**; see [known issues](KNOWN-ISSUES.md).
+![Theme Studio preview](docs/screenshots/v1.0.4-rc2.18/theme-builder.png)
 
 ## 🎮 Quick Menu and return to Nova
 

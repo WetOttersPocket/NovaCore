@@ -21,7 +21,15 @@ Store attribution: the PS4 Homebrew Store and its applications belong to their d
 These notices are not a licence for NovaCore's private application source, nor a claim of ownership of media, station artwork, game art or third-party services. The bundled licence/source material and applicable upstream terms continue to apply.
 Phone notification server: [web-push](https://github.com/web-push-libs/web-push), MIT; browsers use their own push service. IPTV channel metadata/logos belong to the relevant providers.
 
-## orbisRPC
+## RC2.18 additions
+
+- **Bebas Neue**, Ryoichi Tsunekawa / Dharma Type, SIL Open Font License 1.1. Font and licence bundled under resources/nova. [Upstream](https://github.com/google/fonts/tree/main/ofl/bebasneue).
+- **DB Rebuilder v0.2**, m2k7m and upstream contributors, GPLv3. [Upstream](https://github.com/m2k7m/DB-REbuilder). An unmodified separate manually dispatched payload, not linked into Nova. Corresponding upstream source/licence accompany it under components/db-rebuilder and as release assets. The archive contains only DB Rebuilder, not Nova app or ShellUI source. Original BIN SHA-256: `943f12941761a9c360bc4a2b0cab8c7f3b7945e9d1adbfdddf6c55e0053bf3e5`.
+- [Apollo PS4 manual restore workflow](https://github.com/bucanero/apollo-ps4/blob/main/docs/usage.md) credited; its code is not linked into the recovery controller.
+
+Nova app source stays private. Separate-component licensing does not grant rights to Nova code. Existing credits continue below.
+
+### orbisRPC credits
 
 Optional payload/setup by [SirHumza, CyberMask367 and contributors](https://github.com/SirHumza/orbisRPC). The original logo is credited in the RPC guide and in-app Help; it is not Nova artwork. Upstream has no settled project licence; its work is not relicensed here. Nova account linking and orbisRPC account-session authentication are separate.
 
