@@ -1,10 +1,26 @@
-![NovaCore banner](docs/screenshots/v1.0.4-rc2.18/banner.png)
+![NovaCore v1.1.0-rc.12 banner](docs/screenshots/v1.1.0-rc.12/banner.png)
 
 # NovaCore 🦦
 
 A free, customisable PS4 dashboard by **WetOttersPocket**. Games, media, friends and tools together, with a **Quick Menu inside Nova, on the PS4 dashboard and over games**.
 
-## 🌌 Latest: v1.0.4-RC2.18 — test pre-release
+## 🆕 New: v1.1.0-rc.12 — public test RC
+
+**[Download rc.12](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.1.0-rc.12/NovaCore-v1.1.0-rc.12.pkg)** · [Release notes](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.1.0-rc.12) · [psnovacore.uk](https://psnovacore.uk)
+
+Everything since RC2.18, with signed in-app updates from GitHub switched on: Playlists and a video player bar, one-press theme sharing and real likes in Community, 19 text fonts and a Text font row in Theme Studio, and Nova Link on your phone (PKG manager and a media remote). PS4 testing is still under way, and every new feature has its own off switch. Full list in the [changelog](CHANGELOG.md).
+
+| Playlists in Music | Video player bar |
+|---|---|
+| ![Playlists in Music](docs/screenshots/v1.1.0-rc.12/playlists.jpg) | ![Video player bar](docs/screenshots/v1.1.0-rc.12/video-bar-youtube.jpg) |
+| **Save to playlist from YouTube** | **Share a theme in one press** |
+| ![Save to playlist from YouTube](docs/screenshots/v1.1.0-rc.12/add-to-playlist.jpg) | ![Theme shared](docs/screenshots/v1.1.0-rc.12/community-share.jpg) |
+
+![Nova Link on your phone: Home, PKG manager and media remote](docs/screenshots/v1.1.0-rc.12/novalink-phone.jpg)
+
+*Design previews from Nova's own layout code with demo data, not PS4 captures. More in [docs/screenshots/v1.1.0-rc.12](docs/screenshots/v1.1.0-rc.12).*
+
+## 🌌 Previous: v1.0.4-RC2.18 — test pre-release
 
 **[Download RC2.18](https://github.com/WetOttersPocket/NovaCore/releases/download/v1.0.4-RC2.18/NovaCore-v1.0.4-RC2.18.pkg)** · [Full release notes](https://github.com/WetOttersPocket/NovaCore/releases/tag/v1.0.4-RC2.18) · [Changelog](CHANGELOG.md) · [Known issues](KNOWN-ISSUES.md) · [Discord](https://discord.gg/cjgA8T94E)
 
