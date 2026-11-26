@@ -1,4 +1,4 @@
-![NovaCore v1.1.0-rc.12 banner](docs/screenshots/v1.1.0-rc.12/banner.png)
+![NovaCore v1.1.0-rc.14 banner](docs/screenshots/v1.1.0-rc.14/banner.png)
 
 # NovaCore 🦦
 
