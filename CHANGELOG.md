@@ -1,5 +1,21 @@
 # NovaCore changelog
 
+## [1.1.0-rc.14] — 2026-11-26 (DEV build, package 03.48, helper 94441)
+
+The last update you install by hand: from here on Nova updates itself in place. Also Nova Link's home pages in the app's look, Nova Link installs without a TV prompt, a red update dot, FPKG database Repair that can actually run, and a dash helper that can't hold up Restart or Power off. Console-unverified.
+
+- New: Nova Link's home pages match the app. Games, Sleep, Status, Gallery and the media remote open from the Nova Link tiles with the same look as the app. A paired phone skips the second PIN; the 4-digit PIN stays as a fallback. Home Wi-Fi only.
+- New: each of those tiles opens the right screen (/home#games, #sleep, #status, #gallery, /remote). An older Nova build still opens the home or remote page, and may still ask for the PIN until you install this one.
+- The PS4 still asks before it starts a game, deletes a package, or goes to rest or powers off.
+- Nova Link features stay on by default. Off files under /data/novacore-lab/ (phone-link.off and the nl-*.off files) and the two-crash guards are only safety nets.
+- New: packages from your phone install straight away. When Nova Link sends a PKG, Nova downloads and checks it, then hands it to the PS4 installer with no X press on the TV. Off switch: /data/novacore-lab/nl-autoinstall.off.
+- New: a red dot when a Nova update is waiting. It shows on SETTINGS and on Settings > Nova updates while an update is available, downloading or ready, until you install it or choose Later. Off switch: /data/novacore-lab/update-badge.off.
+- New: Nova updates install in place. Press Install and Nova closes; the dash helper checks the package again, removes the old Nova, installs the new one and opens Nova again. No more deleting Nova by hand, and your settings, themes and fonts stay. Works from the update after this one, once the PS4 has restarted with dash helper 94441. Off switch: /data/novacore-lab/helper-update.off.
+- Fixed: FPKG database recovery only ever got as far as the scan. The backup step works since rc.13, each step now shows a tick, and Repair checks GoldHEN's BinLoader first (GoldHEN ships it switched off). If it is off, X twice switches it on in GoldHEN's settings for you; after a restart and HEN load, Repair runs.
+- Fixed: Community fonts kept on the Nova server showed no example until you downloaded them. Nova now fetches the checked font file in the background so every card shows the font itself (`community-font-preview.off`).
+- Fixed: the dash helper could hold up Restart or Power off while it was busy (for example waiting on the network). It now lets go after 1.5 seconds, and it stays completely idle if the Nova app has been deleted (dash helper 94441).
+- Carries everything from 1.1.0-rc.13. Helper 94441 replaces 94440.
+
 ## [1.1.0-rc.13] — 2026-11-26 (DEV build, package 03.47, helper 94440)
 
 Fixes from the rc.12 test, on top of rc.12. The first build offered to consoles through Nova Updates. Console-unverified.
