@@ -1,5 +1,18 @@
 # NovaCore changelog
 
+## [1.1.0-rc.13] — 2026-11-26 (DEV build, package 03.47, helper 94440)
+
+Fixes from the rc.12 test, on top of rc.12. The first build offered to consoles through Nova Updates. Console-unverified.
+
+- Fixed: Create and verify database backup (Tools > FPKG database recovery) stopped with "Backup read-back failed. Repair refused." Nova now saves each backup file the plain way and reads every file back to check it. If anything still goes wrong, the message says which file and why.
+- New: your Nova name at the top right. The name you set now shows there, on Nova Series pages and on your Quick Menu profile, instead of your PSN name.
+- New: community theme wallpapers on the cards. Each theme in Community shows its own wallpaper behind its name, so you can see what you're getting. Off switch: /data/novacore-lab/community-art.off.
+- New: a full view of a community theme. X opens it big, with its wallpaper, colours and creator; Square installs it and Circle goes back. Off switch: /data/novacore-lab/community-view.off.
+- New: a Text fonts tab in Community, beside Title fonts. Text fonts change the smaller text (menus, lists, buttons and descriptions) and Title fonts change the big titles and headings; every card says which. 39 new text fonts from the Google Fonts collection, including Inter, Roboto, Open Sans, Montserrat, Atkinson Hyperlegible and JetBrains Mono. They live on the Nova server and download when you get one, so Nova itself stays small. Off switch: /data/novacore-lab/community-textfonts.off.
+- New: a download bar in the "Get this font" box. It fills while Nova downloads (or checks) the font and adds it to My fonts, then the box closes by itself. Both buttons in the box are now easy to read on every theme.
+- Fixed: a theme you shared in Community said "Made by NovaCore" when you started it from a built-in theme. New uploads carry your Nova name, and your older uploads show it on your PS4.
+- Carries everything from 1.1.0-rc.12. Helper 94440 is unchanged.
+
 ## [1.1.0-rc.12] — 2026-11-25 (DEV build, package 03.46, helper 94440)
 
 Fixes from the rc.11 test, on top of rc.11. Console-unverified.
