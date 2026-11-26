@@ -1,6 +1,160 @@
+# NovaCore changelog
+
+## [1.1.0-rc.12] — 2026-11-25 (DEV build, package 03.46, helper 94440)
+
+Fixes from the rc.11 test, on top of rc.11. Console-unverified.
+
+- Fixed: H.265 (HEVC) videos stuttered while H.264 played smoothly. H.265 now decodes on 5 threads instead of 2, and above 720p the frames nothing else depends on skip the extra smoothing pass, as H.264 already does. Off switch: /data/novacore-lab/hevc-boost.off.
+- Fixed: sharing a theme with a big wallpaper failed. Nova now shrinks the wallpaper to a JPEG of at most 1 MB (up to 1920x1080) for the upload copy only; your theme on the PS4 keeps its original picture. Off switch: /data/novacore-lab/wall-shrink.off.
+- Theme uploads write the wallpaper size and the server's answer to Nova's log, so a failed upload says why.
+- New: L2 and R2 badges on either side of the Media tabs (Audio, NovaFlix, YouTube), so you can see which buttons switch them.
+- Carries everything from 1.1.0-rc.11. Helper 94440 is unchanged.
+
+## [1.1.0-rc.11] — 2026-11-25 (DEV build, package 03.45, helper 94440)
+
+Your requests from the rc.10 test, on top of rc.10. Console-unverified.
+
+- New: L1 / R1 move through the top tabs everywhere again, Media included, and L2 / R2 switch between Audio, NovaFlix and YouTube. The hint text under the Media tabs is gone. Off switch: /data/novacore-lab/media-l2r2.off.
+- New: Square on the Audio page steps through the sources (Radio, Favourites, Local music, My stations, Queue, Playlists) and then the bottom bar (Local media, Nova Cast, Jellyfin, Captures, Add station; X opens it). On a track or station Square adds it to a playlist. Off switch: /data/novacore-lab/audio-square.off.
+- New: Save to playlist in a YouTube video's menu, next to Watch and Listen.
+- New: getting a font in Community > Fonts opens a small "Get this font" box instead of jumping to Theme Studio. The font goes into My fonts, and Theme Studio's font lists show only None, Bebas Neue and My fonts. Off switches: /data/novacore-lab/font-popup.off, /data/novacore-lab/my-fonts.off.
+- New: a Text font row in Theme Studio. It changes Nova's normal text (menus, lists and descriptions), not just the big headlines. Off switch: /data/novacore-lab/text-font.off.
+- New: 19 text fonts in Community > Fonts: Poppins (Light, Regular, Medium), Lato (Light, Regular), Carlito (Regular, Bold), Liberation Sans, Serif and Mono (Sans and Serif also in Bold), DejaVu Sans, Sans Condensed, Serif and Sans Mono, Source Code Pro, Lora and Caladea. Every font card now says what it is for: headlines, text, or both.
+- Fixed: a playlist no longer plays a favourite station after a song. Playlist songs play once and Nova picks the next song itself (dash helper 94440). Off switch: /data/novacore-lab/radio-once.off.
+- Community themes can have wallpapers up to 5 MB (was 1.1 MB). The community server needs its matching update before uploads over 1.1 MB go through.
+- Carries everything from 1.1.0-rc.10. Helper 94440 replaces 94439.
+
+## [1.1.0-rc.10] — 2026-11-25 (DEV build, package 03.44, helper 94439)
+
+Fixes from the rc.8 console test, on top of rc.9. Console-unverified.
+
+- New: Playlists in the Quick Menu's Music tab. Pick a playlist and play its songs, with next and previous. MP3s and radio play as they are; YouTube songs play when Nova has saved their sound. Off switch: /data/novacore-lab/qm-playlists.off.
+- Fixed: Media no longer jumps to Pulse. L1 on the first Media page, R1 on the last one and L1/R1 while a video plays now stay in Media, as Themes does since rc.9. Off switch: /data/novacore-lab/media-edge.off.
+- Fixed: the PS Store "update needed" screen. The helper holds the Store tile's focus for 1.5 s when the focus blinks off, so X opens the Store through Nova. Off switch: /data/novacore-lab/store-sticky.off.
+- Fixed: the top bar popping up while you scroll the main tiles after closing it with O. It now only opens after a recent Up press. Off switch: /data/novacore-lab/toprow-recentup.off.
+- Fixed: Nova Link's two-crash guards now check only the first minute of each session. Before, they restarted every minute, filled the log and could switch a feature off for a later crash.
+- Carries everything from 1.1.0-rc.9, including the Themes Community L1/R1 fix, Nova Link and playlists. Helper 94439 replaces 94438.
+
+## [1.1.0-rc.9] — 2026-11-25 (DEV build, package 03.43, helper 94438)
+
+Navigation fix on rc.8; its feature set and unchanged helper are carried forward. Console-unverified.
+
+- New: dedicated L1/R1 navigation for Layouts & Themes. Community stays in the theme browser instead of jumping to News; Theme Studio and open theme dialogs consume the buttons without changing the page.
+- Fixed: playlist picker and keyboard inputs cannot switch the underlying page. Shoulder inputs stay captured while the picker is open and briefly after adding or cancelling.
+- Carries every rc.8 feature, including Nova Link, playlists, Community sharing and likes, and the existing update system. Helper 94438 is unchanged.
+
 # Changelog
 
 Current release notes take precedence over older claims where behaviour has changed.
+
+## [1.1.0-rc.8] — 2026-11-25 (DEV build, package 03.42, helper 94438)
+
+Nova Link build on top of 03.41: Phone link starts by itself, and your phone gets a PKG manager, a media remote and Nova Link at home (start games, sleep timer, open links, status, gallery, alerts and bug reports). The YouTube wall opens on Popular now and music again. The dash helper is unchanged (94438). Console-unverified.
+
+- New: Phone link starts by itself, so every Nova Link feature works on your home Wi-Fi without a trip to Settings. Its address and PIN are in Settings > Phone link, and turning it off there is remembered. Off switch: /data/novacore-lab/phone-link.off.
+- New: Nova Link PKG manager. Update your homebrew from Nova's own list and tidy old .pkg files in /data/pkg from your phone. The TV asks "Delete this file?" before anything is removed. Off switch: /data/novacore-lab/nl-pkg-extras.off.
+- New: a media remote on your phone. Play / pause, back and forward 10 s, previous and next, volume, and what's playing with its picture, for NovaFlix, YouTube and Radio. It works on your home Wi-Fi while Nova is on the TV. Off switch: /data/novacore-lab/nl-remote.off.
+- New: start a game from your phone, with a launch profile if you have one. The TV asks "Start this game?" first. Off switch: /data/novacore-lab/nl-launch.off.
+- New: sleep timer from your phone. Rest mode in 15, 30, 60 or 90 minutes, or after this game, and the TV counts down for 60 seconds first so anyone playing can cancel. Off switch: /data/novacore-lab/nl-sleep.off.
+- New: open links from your phone. Send a YouTube or direct video link and it plays on the PS4 after you say yes on the TV. Other web pages don't open on the PS4 yet. Off switch: /data/novacore-lab/nl-openlink.off.
+- New: your PS4 on your phone. See the Nova version, free space, how long it has been on, the last install and your biggest games, and save your screenshots and clips to the phone. Off switches: /data/novacore-lab/nl-status.off and /data/novacore-lab/nl-gallery.off.
+- New: phone alerts and bug reports. Pick which alerts reach your paired phone (Nova achievement, install finished, Nova update ready, a feature switched itself off); the pop-up only says your PS4 has news. One tap saves Nova's logs to your phone with tokens, PINs, friend codes and user names hidden. Off switches: /data/novacore-lab/nl-alerts.off and /data/novacore-lab/nl-bugreport.off.
+- Nova Link phone page: a slow, blurred cyan, pink and navy background moves behind the cards. It pauses when the page is hidden, stays still if your phone asks for less motion, and has a Moving background switch.
+- YouTube: the wall opens on Popular now (the most-viewed recent videos), then the music rows, then Picked for you from what you watch and listen to, then Watch again.
+- Every Nova Link feature is on by default and has a two-crash guard: if Nova stops twice in a feature's first minute, that feature switches itself off and the rest of Nova carries on.
+- Carries everything from 1.1.0-rc.7 (03.41): Playlists, the video player bar, Community sharing and likes, and NovaLink Send PKG on by default.
+
+## [1.1.0-rc.7] — 2026-11-25 (DEV build, package 03.41, helper 94438)
+
+Feature build on top of 03.40: Playlists in Music, a control bar in the video player, one-press theme sharing and real likes in Community, and NovaLink Send PKG on by default (Nova still asks on the TV before anything installs). The dash helper is unchanged (94438). Console-unverified.
+
+- New: Playlists in Music. Make, rename and delete playlists, play all, shuffle, repeat one or all, and move or remove songs. Songs can come from your HDD or USB, radio, Jellyfin and YouTube.
+- New: a control bar in the video player for films, your own videos and YouTube: previous, back 10 s, play / pause, forward 10 s, next, volume, and a seek bar with time, length and how much has loaded.
+- Add to playlist from the music page, a YouTube video, the Quick Menu's Music tab and the video player. Playlists are kept on the console and survive restarts.
+- Playlists: YouTube songs are fetched fresh each time they play. A file that has moved is skipped with a note. Deleted playlists go to Recently deleted, where you can bring them back.
+- Video player: pick the audio track when a video has more than one. The bar hides after 4 seconds and comes back on any button.
+- Playlists and the video player bar each have their own off switch: /data/novacore-lab/playlists.off and /data/novacore-lab/player-controls.off.
+- New: share a theme in one press. Community > My uploads > Share a theme shows which of your themes goes up (Square picks another). X, then X on "Share this theme with everyone?", and a progress sheet ends with "Shared!" or says why not. With no saved theme, X opens Theme Studio with "Save and share with the community" ready. Off switch: /data/novacore-lab/community-share1.off.
+- New: real likes on community themes. Square likes or unlikes a theme: one like per console, counts come from the Nova community server and stay after a restart, and you can't like your own. Until likes are switched on on the server, Nova says so instead of showing a fake like. Off switch: /data/novacore-lab/community-likes.off.
+- Community: no demo themes. An empty store no longer shows sample cards; it says "No community themes yet. Be the first to share one." with a Share button, and shows plain Loading and server-down messages. Off switch: /data/novacore-lab/community-nodemo.off.
+- Community: smoother page. The theme grid scrolls past four cards, every upload in My uploads can be reached, Triangle refreshes the same page, messages wrap inside the side column and the card button says Install. Off switch: /data/novacore-lab/community-polish.off.
+- New: NovaLink Send PKG is on by default. Nova still asks "Install this package?" on the TV, and nothing installs until you confirm. An earlier Off in Settings stays off. Off switch: /data/novacore-lab/pkg-send.off.
+- Carries everything from 1.1.0-rc.6 (03.40): the Quick Menu takes the controller over games, in-app updates check GitHub, rounded Home card corners, the top bar only on the dash.
+
+## [1.1.0-rc.6] — 2026-11-25 (DEV build, package 03.40, helper 94438)
+
+Fix build on top of 03.39: the ShellUI top bar only on the PS dash (the Quick Menu still opens everywhere), the controller stays with the open menu and the game under it stops moving, Nova starts on the Default tab and in-app updates really check GitHub. Console-unverified.
+
+- New: the PS dash top bar only answers on the dash. Nova checks which screen ShellUI has in front, so X in HEN, Debug Settings, Package Installer, the Store, games or the power screen goes to that screen again and never opens a Nova top bar panel. The left-stick top bar fix still works on the dash. Off switch: /data/novacore-lab/fg-gate.off.
+- New: an open Quick Menu or top bar panel keeps the controller you are using, so the dash underneath no longer moves while you navigate it. Off switch: /data/novacore-lab/qm-pad-owner.off.
+- New: Nova starts on your Default tab. An "open Nova on a tab" request left behind while Nova was closed (more than 45 s old) is ignored, so the first start no longer lands on Notifications. Off switch: /data/novacore-lab/open-stale.off.
+- Quick Menu: opens everywhere, as in 03.39 - hold the touchpad (or use Nova's Quick Menu button) in games, apps, HEN, the Store or on the dash. Only the top bar's own routes (X on a top bar icon, the Store or What's New tile) wait for the dash. Off switch for those routes: /data/novacore-lab/fg-gate.off.
+- New: the game no longer moves under the Quick Menu. While the menu is open over a game or app it takes the controller, the same way the PS4's own menu does, and gives it back the moment the menu closes. If anything stalls it hands the controller back by itself within 3 s. Off switch: /data/novacore-lab/qm-game-input.off.
+- Updates: in-app updates really check GitHub now. 03.37 to 03.39 were built as "Public test", so Settings > Nova updates said "only in DEV builds" and Nova never looked for an update. Nova also no longer offers the version you already have, or an older one unless the signed update is marked ROLLBACK. Off switch: /data/novacore-lab/ota.off.
+- Home: rounded cards keep their round corners. The Video, Music, News and Nova Online pictures, their dark fade and the focus light now follow the card's own corner radius, also with a rounder theme, when a card is focused and while a picture loads. Homebrew store tiles and banners do the same. Off switch: /data/novacore-lab/tile-corners.off.
+- Carries everything from 1.1.0-rc.5 (03.39): YouTube fresh links and clear errors, hover pictures, power-off guards.
+
+## [1.1.0-rc.5] — 2026-11-25 (DEV build, package 03.39, helper 94435)
+
+Fix build on top of 03.38: YouTube refused links (fresh links, clear errors) and PS dash hover pictures. Console-unverified.
+
+- New: YouTube keeps playing when a link is refused. If YouTube refuses the video or sound link part-way (HTTP 403), Nova asks for fresh links and carries on from the same spot, up to twice per link. Off switch: /data/novacore-lab/yt-403.off.
+- New: clear YouTube errors. A link YouTube still refuses ends with "YouTube stopped sending this video (HTTP 403)" instead of "Video finished", and a refused sound link stops with an error instead of playing silent video. Off switch: /data/novacore-lab/yt-403.off.
+- New: PS dash game tiles show their own pictures again. While a game's picture loads, the hover box stays empty and fills in a moment later; it no longer keeps the What's New or news picture. Off switch: /data/novacore-lab/hover-picfix.off.
+- PS dash: a normal power-off can no longer switch off the What's New icon or the hover box. The icon needs two failed starts (was one) and both crash counts clear after 60 s of normal running. Off switch: /data/novacore-lab/d64-guards.off.
+- YouTube server: the resolver (2026.11.25-1, already live on the Nova server) checks each link and renews the visitor id when YouTube refuses it. No console change needed.
+- Carries everything from 1.1.0-rc.4 (03.38).
+
+## [1.1.0-rc.4] — 2026-11-25 (DEV build, package 03.38, helper 94434)
+
+Fix build on top of 03.37: first-start traces, no second helper, top bar, IPTV headers, Community fonts and upload, faster What's New hover. Console-unverified.
+
+- New: Community fonts show in their own font. Each specimen is drawn in that font; at most 4 are kept in memory. Off switch: /data/novacore-lab/community-fonts-live.off.
+- New: Upload card in Community > My uploads, with clear steps and a plain message when the community server isn't available. Off switch: /data/novacore-lab/community-nav2.off.
+- New: per-channel playlist headers. IPTV channels that need their own User-Agent or Referer (#EXTVLCOPT or url|User-Agent=...) now send them. Off switch: /data/novacore-lab/stream-headers.off.
+- Community: every button now lands on the right screen. O goes back one step, Up reaches the tabs and + Create a theme, and X on a font opens Theme Studio with that font. Hints follow the focus.
+- Theme Studio: the headline font list starts with a real "None" (standard Nova text) that clears the choice. Off switch: /data/novacore-lab/font-none.off.
+- Top bar: the stick now works like the d-pad (past 0.45 counts as Up/Down). Off switch: /data/novacore-lab/toprow-stick.off.
+- Top bar: opens when the PS4 can't say whether a game has focus. Off switch: /data/novacore-lab/toprow-focusunknown.off.
+- PS dash: hovering What's New, the Nova tile or your profile row no longer stutters. Pictures and files are read off the drawing thread. Off switch: /data/novacore-lab/wn-perf.off.
+- Home: Nova no longer loads a second home-screen helper while the running one is busy. Off switch: /data/novacore-lab/shellui-fallback-guard.off.
+- First start: every boot step is written to novacore-lab-boot.txt, and a root window that didn't open is retried once. Off switches: boot-steps.off, boot-root-retry.off.
+- Every change has its own off switch, and two unfinished runs switch it off automatically (<name>.disabled).
+- Carries everything from 1.1.0-rc.3.
+
+## [1.1.0-rc.3] — 2026-11-25 (DEV build, package 03.37, helper 94433)
+
+Combined DEV build: in-app updates from GitHub, NovaLink Send PKG, a new boot animation, plus update notes in every build. Console-unverified.
+
+- Settings > Nova updates now shows this console's own NovaCore version (NOVA00003), not the old Nova title.
+- Every build carries its own update notes ("In this build"), so they show even offline. PS dash: hover the Nova tile for this build's new features; What's New scrolls 20 live Nova Pulse stories.
+- Latest GitHub release notes appear on the same page when online (information only).
+- New: signed in-app updates from GitHub releases (dev channel). Nova checks at start and every 6 hours.
+- Only updates signed with WetOttersPocket's key are accepted; size and SHA-256 are checked before anything installs.
+- WetOttersPocket's update signing key is now built in (fingerprint ff6dcb5f...e765), so update checks are on; anything not signed with it is refused.
+- When an update is found: a PS4 pop-up, a NovaCore entry in Notifications and an update card in Settings.
+- The update card: Download, then Install with one confirm press, or Later. GoldHEN, ini files and other apps are always refused.
+- Off switch: /data/novacore-lab/ota.off. Two interrupted checks in a row turn checks off automatically.
+- New: NovaLink Send PKG. Send a package from your phone (link, file or home Wi-Fi); Nova downloads and checks it, then asks "Install this package?" on the TV.
+- Nothing installs without your X press. O keeps the file in /data/pkg. Never shown over a game or a video.
+- Off until you turn on Settings > System & About > NovaLink: send packages. Off switch: /data/novacore-lab/pkg-send.off.
+- Phone link (home Wi-Fi, port 8780): sent packages now wait for X on the TV instead of installing straight away.
+- New boot animation (neon NC) while Nova loads your covers; boot now waits at most 12 s for covers before showing the dashboard. Off switch: /data/novacore-lab/bootanim.off.
+- New Community page under Personalisation: Themes, Fonts and My uploads, matching the published preview. Off switch: /data/novacore-lab/community-gallery.off.
+- Two unfinished starts of the new Community page fall back to the previous Community tab automatically (community-gallery.disabled).
+- Theme Studio can use the 34 verified catalogue fonts. Fonts you add yourself stay on this console only. Off switch: /data/novacore-lab/user-fonts.off.
+- Community likes and the public fonts route are prepared but remain off until the nova-themes sidecar is turned on. Demo themes are never uploaded.
+- Smoother dashboard (Perf packs 1 and 2): animations no longer jump on a busy frame; logs, bridge files and Friends updates no longer hold up drawing; PS dash: Nova's work spread over frames. Same look, same speed.
+- Covers coming into view load first while you scroll. Home, Quick Menu, Nova Play and the new Community page do much less work every frame (Community no longer writes files every frame).
+- Perf off switches in /data/novacore-lab: perf-<name>.off (dt, uitrace, ttarm, bridgeio, upload, textfit, scrollwarm, lanmemo, friendspoll, rowcache, cgate, stallprobe) or perf.off. Frame times: perf.log.
+- PS Store button: pressing X now opens just your chosen app. Sony's "update required" screen no longer pops up behind it.
+- Fixed a false "could not be opened" message after the Store button opened your app.
+- Carries everything from 1.1.0-rc.2: smoother 1080p film playback (video-smooth.off) and the Friends request, presence and picture fixes.
+
+## [1.1.0-rc.2] — 2026-11-24 (DEV build, package 03.36, helper 94431)
+
+- MediaSmooth: 1080p H.264 deblocks reference frames only, so films from the HDD keep sound and picture in step (video-smooth.off).
+- Friends: requests no longer repeat, removed friends stay removed, request rows show pictures, online status uses the server clock, "Last online N days ago".
 
 ## [1.0.4-RC2.18] — 2026-11-24 (test pre-release, helper 94429)
 
