@@ -1,5 +1,22 @@
 # NovaCore changelog
 
+## [1.1.0-rc.15] — 2026-11-27 (DEV build, package 03.49, helper 94441)
+
+Fixes from the testers' notes on rc.14, and the first Nova update that consoles on rc.14 can install in place from Nova Updates. Console-unverified.
+
+- Fixed: Friends, Nova Online and the Discord QR code stopped with "Couldn't securely save Friends setup" on consoles that had never set up Friends. The PS4 refuses the kind of file link Nova used to save the first Friends file (the same cause as the old database-backup error), so Nova now saves it another way. Friends you already have are untouched.
+- Fixed: the clock showed the wrong time outside the UK (it was UTC). Nova now uses the PS4's own time zone and summer time on every clock. Off switch: /data/novacore-lab/clock-tz.off.
+- New: 12-hour or 24-hour clock. Settings > System & About > Clock: Follow PS4, 12-hour or 24-hour.
+- Fixed: Circle on a "Press X again" prompt (for example Clear artwork cache) now cancels it instead of going back to Home.
+- New: a short touchpad press goes back to Home from any page. Holding the touchpad still opens the Quick Menu, and Circle stays Back and Cancel. Off switch: /data/novacore-lab/touchpad-home.off.
+- New: L2 / R2 move through the main tabs on every page. On Media they still switch Audio, NovaFlix and YouTube. Off switch: /data/novacore-lab/l2r2-main.off.
+- Fixed: Settings > Library & Media > Library navigation sound sent you to an old Nova app instead of switching the sounds. It now turns Nova's navigation sounds on and off.
+- Fixed: the first-time setup. Every press counts (quick presses were dropped), Left / Right pick a colour, one X saves it and moves on, and one X finishes setup. Skipping setup still asks twice.
+- Fixed: unlocking a Nova achievement no longer makes the dash stutter. Nova shows its own achievement card; the extra PS4 system pop-up is off unless you create /data/novacore-lab/ach-system-popup.on.
+- Fixed: the profile and trophy buttons, your picture and your name at the top right have more room and no longer run into the clock.
+- New: a dark Quick Menu. Settings > Appearance > Quick Menu style: Light or Dark.
+- Carries everything from 1.1.0-rc.14. Helper 94441 is unchanged.
+
 ## [1.1.0-rc.14] — 2026-11-26 (DEV build, package 03.48, helper 94441)
 
 The last update you install by hand: from here on Nova updates itself in place. Also Nova Link's home pages in the app's look, Nova Link installs without a TV prompt, a red update dot, FPKG database Repair that can actually run, and a dash helper that can't hold up Restart or Power off. Console-unverified.
