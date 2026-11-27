@@ -1,5 +1,21 @@
 # NovaCore changelog
 
+## [1.1.0-rc.17] — 2026-11-27 (DEV build, package 03.51, helper 94441)
+
+Fixes from the testers' notes on rc.15 and rc.16, plus the Nova Updates fixes from rc.16, which was never released. Console-unverified.
+
+- New: one set of controls on every page. L2 / R2 move through the main tabs along the top and do nothing else, on Media too. L1 / R1 move through the tabs inside the page you're on and never jump to another main tab. The D-pad and left stick move around inside the tab. Off switch: /data/novacore-lab/strict-controls.off.
+- Fixed: Library categories couldn't be reached with the shoulder buttons, because L1 / R1 and L2 / R2 both changed the main tab. L1 / R1 now step through the categories.
+- New: L1 / R1 also switch the Settings tabs (Left / Right still work), Audio / NovaFlix / YouTube on Media, the News filters and Games / Recent on Trophies. Pages that already had their own tabs (Homebrew, Transfers, Nova Play, GoldHEN, Themes, the Store) keep them on L1 / R1.
+- The hint bar at the bottom always shows L2 / R2 for the main tabs and what L1 / R1 do on that page. L2 / R2 no longer skip songs on Audio or change rows on Media; use the D-pad for rows.
+- Fixed: the clock could still be wrong outside the UK. Nova now reads the time the PS4 itself shows and adds it to UTC every time, and it writes what the PS4 reports to /data/novacore-lab/clock-debug.txt, so a wrong clock can be traced from the logs. Off switch: /data/novacore-lab/clock-tz.off.
+- New: Settings > System & About > Time zone fix. Leave it on Auto. If the clock is still wrong, X sets how many hours ahead of or behind UTC you are, and pressing on past -1 h and 0 goes back to Auto.
+- New: a new top bar. Your picture and Nova name sit at the left end with the NovaCore logo next to your name, and the profile and trophy buttons sit beside a bigger clock at the right. Off switch: /data/novacore-lab/topbar-card.off.
+- Fixed: Download on the Nova update card said "Busy. Try again in a minute." whenever Nova had checked for updates in the last minute. It now starts straight away; it only waits while a check is still running, and then says so.
+- New: Left / Right move between Download (or Install), Later and Check again on the Nova update card, and X presses the one that is lit. Before, only X and Square did anything.
+- Fixed: the notes in Settings > Nova updates overlapped and cut off after two lines. Each note now gets the lines it needs, and the GitHub notes wrap instead of stopping at one line.
+- Carries everything from 1.1.0-rc.15 and 1.1.0-rc.16. Helper 94441 is unchanged.
+
 ## [1.1.0-rc.16] — 2026-11-27 (DEV build, package 03.50, helper 94441)
 
 Fixes for Nova Updates found while installing rc.15 in place. Console-unverified.
