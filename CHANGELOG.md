@@ -1,5 +1,14 @@
 # NovaCore changelog
 
+## [1.1.0-rc.16] — 2026-11-27 (DEV build, package 03.50, helper 94441)
+
+Fixes for Nova Updates found while installing rc.15 in place. Console-unverified.
+
+- Fixed: Download on the Nova update card said "Busy. Try again in a minute." whenever Nova had checked for updates in the last minute. It now starts straight away; it only waits while a check is still running, and then says so.
+- New: Left / Right move between Download (or Install), Later and Check again on the Nova update card, and X presses the one that is lit. Before, only X and Square did anything.
+- Fixed: the notes in Settings > Nova updates overlapped and cut off after two lines. Each note now gets the lines it needs, and the GitHub notes wrap instead of stopping at one line.
+- Carries everything from 1.1.0-rc.15. Helper 94441 is unchanged.
+
 ## [1.1.0-rc.15] — 2026-11-27 (DEV build, package 03.49, helper 94441)
 
 Fixes from the testers' notes on rc.14, and the first Nova update that consoles on rc.14 can install in place from Nova Updates. Console-unverified.
